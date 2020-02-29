@@ -3,3 +3,41 @@ Introduction to Automation:
 	Automation Testing:
 
 		Automation testing means running software programs that perform the execution of test cases automatically and produce the test results without any human intervention.
+
+		not everything can be automated yet, but the industry is improving. technologies are getting smarter every day.
+
+		Test Automation tools:
+
+			Examples:
+
+				Eggplant
+
+				**Selenium
+
+				Cucumber
+
+				Serenity
+
+				Specflow
+
+				Apache JMeter
+
+				Watir
+
+				Appium
+
+				Protractor
+
+				sikuli
+
+				cuit
+
+				CrossBrowserTesting
+
+				Ranorex
+
+				Applitools
+
+				TestComplete
+
+				United Functional Testing (UFT)
