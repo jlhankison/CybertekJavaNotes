@@ -1,0 +1,211 @@
+Git Introduction:
+
+	What is Git:
+
+		the main role of Git is to track changes to your program. This way if something goes wrong you can go back to find out where the problem came from.
+
+		Git is a command line tool
+
+		Git exists on your computer
+
+	GIT USAGE:
+
+		Git can show you all kinds of information:
+
+			Differences from version to version
+
+			When (date, time) the changes were made
+
+			what file was modified
+
+			what line(s) was added, modified, or deleted
+
+			who made the changes and why (with the commit message)
+
+	
+
+	TERMS:
+
+		SCM:
+
+			SCM stands for Source code management
+
+		CLI:
+
+			CLI stands for Command line interface
+
+		VCS:
+
+			VCS stands for Version Control system
+
+			Git is a VCS
+
+			VCS allows us to go back to a previous version of the code, very useful if someone does something to make the working code break so that you can see what was changed.
+
+			Commit Changes:
+
+				Commit Changes exists within VCS
+
+				takes a snapshot of the project at some point.
+
+	GIT PROCESSES AND STEPS:
+
+			git exists entirely in PowerShell (aka the command console)
+
+		PowerShell commands:
+
+			clear
+
+				clears the screen
+
+			git config 
+
+					shows all options for git config commands
+
+
+
+		Setting up git username, email and password:
+
+			1.) open powershell and type following commands
+
+			2.) type - git config --global user.email "email@gmail.com"
+
+			3.) there will be no output in the powershell after any of these inputs
+
+			4.) type - git config --global user.name "username"
+
+			5.) type - git config --global user.password "password"
+
+			6.) to see current git config - type git config -l (l stands for list) then use keyboard arrows to scroll over git config settings. to exit from the log press 'q'.
+
+			7.) to change any of these values, type the corresponding command into powershell again
+
+		initializing a git project in the intelliJ console
+
+				initializing a project tells git that you intend to do things with git to this project. Without initializing, you cannot commit or push ANYTHING.
+
+			1.) after opening a new project in IntelliJ, double click on the terminal button on the bottom command bar.
+
+			2.) type git init into the console to initialize our project
+
+			3.) run this command ONLY ONCE after creating a new project.
+
+		Getting the current git status (what has already been committed, what files have not been tracked yet, and whether anything needs to be committed)
+
+			1.) type - git status 
+
+		To permanently exclude certain files/packages from commit we use .gitignore file
+
+			you want to ignore all java automatically generated stuff
+
+				1.) create a file under the main package called .gitignore
+
+				2.) in the .gitignore file you want to type in the .filetype you want git to ignore
+
+				3.) file types you want to ignore with git
+
+					.idea
+					*.iml
+
+		Staging and commiting code
+
+				staging means preparing for commit. any new file in intellij will look red first (meaning its not tracked)
+
+			Staging:
+
+				1.) type git add /path/toTheFile
+
+				2.) or, if you want to stage all of your files...
+
+				3.) type git add . (the period is important)
+
+			commiting:
+
+				1.) git commit -m "commit message here"
+
+				2.) 'm' stands for message
+
+				3.) commit message has to describe changes in a nutshell 
+
+			removing committed files:
+
+				1.) git rm --cached <fileHere>
+
+		creating a remote repository:
+
+				connecting to github
+
+				create ONLY ONCE
+
+			1.) go to github.com
+
+			2.) sign into github
+
+			3.) create new repository with "+" dropdown menu
+
+			4.) name the repository with the same name as your project (not required but recommended for clarity)
+
+			5.) If you have already commited your project files...
+
+				1.) type - git remote add origin https://github.com/YourUserNameGoesHere/yourGithubRepositoryNameGoesHere.git
+
+				2.) you only need to input this ONE TIME to establish a connection, there will be no output from the console for this
+
+				3.) type - git push -u origin master
+
+				4.) IF a github login popup occurs, you must enter your user name and password into the prompt to sync your git with github
+
+					your password will appear INVISABLE in the popup even while you type it (this is a UNIX systems {IE Mac OS and Linux} feature for security)
+
+				4.) after a pause, a push status will show in the console.
+
+					you will see info about your push... compression data, how many objects were pushed, where it was pushed too, etc...
+
+		All in order. Stage, Commit, Push:
+
+			STAGE:
+
+				type - git add . 
+
+				or git add /folderHere/fileHere for specific staging
+
+			COMMIT:
+
+				type - git commit -m "commit message here"
+
+			PUSH:
+
+				type - git push
+
+	
+GitHub.com:
+
+	What is Github:
+
+		if a project is on your own computer it can't be shared with other users, so you need to be able to share it with other people
+
+		Github allows you to store and share your project data with other developers
+
+		Github is like a public warehouse for git projects (repositories) that multiple people on a project can share the same data
+
+	Other Repository hosts
+
+		Bitbucket.com
+
+		GitLab.com
+
+		SourceForge.com
+
+	Repository Locations:
+
+		Central Repository:
+
+			Central Repository means that everyone will be working on the same document at the same time 
+
+		Distributed Repository:
+
+			this means that everyone works on the latest version of the project as it was when they last updated and then will update the final project when they commit and push their code.
+
+	Github repository info
+
+		

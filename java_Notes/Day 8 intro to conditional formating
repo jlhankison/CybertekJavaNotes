@@ -1,0 +1,47 @@
+
+Day 8 
+
+Conditional formating
+
+	normally a program will always execute from top to bottom unless stated otherwise by the programmer
+
+	If
+
+		How to format an if statement
+
+			if ( enter your condition here ) {
+
+				//in here go your commands or expressions
+				}
+
+
+	example of If Else statement:
+		start --> ask user input score --> 
+			If score < 60
+				print --> pass
+			Else 
+				print --> fail
+
+		multi branch IF
+
+			start --> ask user input -->
+
+			if (score > 90) 
+				print --> "grade A" --> end statement
+
+			else if (score > 80) 
+				print --> "grade B" --> end statement
+
+			else if (score > 70)
+				print --> "grade C" --> end statement 
+
+			else 
+				print --> "keep trying" -- > end statement
+
+		if WITHOUT ELSE
+			Start --> ask user input -->
+				if score < 60 
+					mark fail
+				NO ELSE
+					enter score --> move on with program
+

@@ -1,0 +1,123 @@
+
+
+Day 24 Array Methods
+
+ARRAYS CLASS
+
+	similar to Scanner, Arrays is a Java.util class
+
+		class must be imported prior to use
+
+	arrays is the class that contains lots of useful methods to interact with array objects
+
+	METHODS:
+
+		EXAMPLE ARRAY:
+
+			int[] example = {4, 18, 2, 9, 34, 8};
+			int[] example1 = {4, 18, 2, 9, 34, 8};
+
+			String[] example2 = {"Superman", "Batman", "Wonder Woman", "Aquaman", "Cyborg", "Flash"}
+
+		TOSTRING: 
+
+			for the printing the content of the array usually used to see what's inside an array (for debugging)
+			always outputs String
+
+			SYNTAX:
+
+				Arrays.toString(example);
+
+			OUTPUT:
+
+				sout(Arrays.toString(example))
+
+					output --> [4, 18, 2, 9, 34, 8]
+
+		SORT
+
+			for sorting an array in ascending order
+			always outputs array
+
+			RULES:
+
+				Char:
+					sorts by ascii value of the chars in the array
+
+				String:
+					sorts by ascii value of the FIRST CHAR of each String in the array
+
+				Boolean:
+					CAN NOT BE SORTED
+
+				Automatic modification:
+					Arrays.sort(example) does not need to be stored to an array. It automatically modifies the array which it is being applied to.
+						THIS ELIMINATES THE ORIGINAL ORDER OF THE ARRAY
+
+			SYNTAX:
+
+				Arrays.sort(example);
+
+			OUTPUT:
+
+				Arrays.sort(example);
+
+				sout(Arrays.toString(example));
+
+					output --> [2, 4, 8, 9, 18, 34]
+
+		EQUALS
+
+			for checking the equality of two array objects content
+			outputs a boolean value
+
+			RULES:
+
+				Order:
+					content order matters in Array.equals 
+						(tip--> two arrays with the same data but in a different order can be made equal via Arrays.sort)
+
+			SYNTAX:
+
+				Arrays.equals(example, example1);
+
+			OUTPUT:
+
+				sout(Arrays.equals(example, example1));
+
+					output --> TRUE
+
+				sout(Arrays.equals(example, example2));
+
+					output --> FALSE
+
+		SPLIT
+
+			allows you to break up a string into an array in chunks that we designate.
+			outputs String array
+
+			SYNTAX:
+
+				String example = "Come on Barbie let's go party";
+
+				String[] exampleArray = example.split("splitByValueGoesHere");
+
+			OUTPUT:
+
+				String[] exampleArray = example.split(" ");
+				sout(Arrays.toString(exampleArray));
+
+					output --> [Come, on, Barbie, let's, go, party]
+
+				String[] exampleArray = example.split("o");
+				sout(Arrays.toString(exampleArray));
+
+					output --> [C, me , n Barbie let's g, party]
+
+
+
+
+
+
+
+

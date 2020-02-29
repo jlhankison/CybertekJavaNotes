@@ -1,0 +1,49 @@
+
+Day 9:
+
+Warm up task:
+
+	write a program to find out if a number is even or odd
+
+		if the number is even then say "this is an even number."
+		if the number is odd then say "this is an odd number."
+
+
+Switch Statement:
+
+ 	Variables usable by switches:
+		byte, short, int, char, String
+	
+	Switch statements are a way to do multi branch conditional statements 
+	THAT ARE TESTING FOR EQUALITY! 	(if variable == x)
+
+	Start --> ask user input option 
+		Case A: --> 
+			you selected A 
+				break; --> End
+		Case B: --> 
+			you selected B 
+				break; --> End
+		Case C: --> 
+			you selected C 
+				break; --> End
+		default: --> 
+			invalid entry; --> End
+
+
+	Switch Sintax
+
+		switch(variable){
+			case value1 :
+				//statement, function goes here
+				break;
+
+			case value2 :
+				//statement, function goes here
+				break;
+
+			default :
+				//statement, function goes here
+				break;
+			}	
+

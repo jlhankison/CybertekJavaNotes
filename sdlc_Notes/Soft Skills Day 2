@@ -1,0 +1,72 @@
+
+Soft skills day 2
+
+our titles after graduating could be:
+
+	qa testers, qua analyst, qa test engeneering , sdet(highest level)
+
+Software testing:
+	done during the development process.
+
+	the process of executing a program or application with the intent of finding bugs.
+
+Verification
+	"are we building the product right?"
+	
+	is a process to make sure the product satisfies the conditions imposed at the start of the development phase
+
+	make sure the product behaves the way we want it to
+
+
+Validation
+	"are we building the right product?"
+
+	is the process to make sure the product satisfies the requirements at the END OF THE DEVELOPMENT PHASE.
+
+	to make sure the product is built as per customer requirements
+
+Software testing typses:
+
+	Static Testing:
+	verification process
+	//As testers we do static testing by beer reviewing test case document
+		//1. analyze the requirement
+		//2. create test case documetn
+		//3. peer review test case doc.
+		//4. start to perform manual testing
+				(can not automate testing until you understand how the program is supposed to perform)
+
+		//EXAMPLE TEST CASE
+			1. open url www.amazon.com
+			2. enter valid user name and password
+			3. click on sign in
+
+		Review
+
+		Walk through
+
+		Inspection
+
+	Dynamic testing:
+	validation process
+
+		Non Functional:
+			//mostly performace testing
+
+			Load testing:
+
+			Stress testing:
+
+			volume testing:
+			e
+
+		Functional:
+			//mostly functionality testing
+
+			adhock testing vs exploratory testing:
+				both are random or informal testing
+				ad-hoc testing : done by testers who want to know the application well
+				purpose : finding bugs+
+
+				exploritory testing : done by terster who does nt know anything about the application
+				purpose : to learn and explore the application.

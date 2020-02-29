@@ -1,0 +1,337 @@
+CLASS CREATION
+
+	Objects can be created in Java
+
+	OBJECT ANATOMY:
+
+		PARTS:
+
+			Attributes
+
+			Instance fields
+
+			Behavior 
+
+			Instance methods
+
+			Constructors
+
+				a special block of code that runs while the object is being initialized 
+
+				Has the same name as the class
+
+				has no return type
+
+				can be overloaded (with different parameters)
+
+				Example:
+
+					public class Example {
+
+						String argument1;
+						int argument2
+
+						public Example (){  // <-- This is an example of a "no arg" constructor. This constructor is created BY DEFAULT in every class 
+												// UNLESS YOU CREATED A CONSTRUCTOR WITH ARGUMENTS WITHIN THE CLASS!
+												// All instance attributes of the class will be instantiated with either "null" or 0 as a default
+
+						}
+
+						public Example (String argument1, int argument2){  // <-- this constructor declares the value of arg1 and arg2. By having two
+							this.argument1 = argument1;						// constructors we can either create the object EMPTY (all nulls and 0's) or
+							this.argument2 = argument2;						// we can create the object with all its variables populated.
+						}
+					}
+
+			Static Members
+
+				Static Method
+
+					a method with static keyword
+
+					can be called in a static way (meaning, object DOES NOT need to be created in order to call this method. Arrays.toString() is an example of a static method as you do not need to create an "Arrays" object first, you only call it)
+
+					can be called directly in main (if in the same Class)
+
+					A class with only static methods is used to MODIFY your code more than to create an object
+
+				Static Field
+
+			@Annotation
+
+				the @ symbol can be used as a sort of comment to make it clear that we are doing something to the existing code
+
+					Examples:
+
+						@Override
+							used to annotate that we are overwriting a superclass method. common usage is in ToString method when we make a new
+
+							@Override IS NOT JUST A COMMENT! IT PERFORMS A FUNCTION 
+
+							when overriding a method, the overriding method must be MORE ACCESSABLE (private->default->protected->public) than the
+							original method. VISIBILITY RULES STILL APPLY! (if a method is private, it cant be accessed by the subclass AT ALL! if it is default it
+								can not be accessed outside of the package!)
+
+							Caution!
+
+								@Override is used to make sure that you do not OVERLOAD the superclass method. It ensures that you "replace" it instead
+
+
+
+		ATRIBUTES:
+
+			An object can have attributes associated with them similar to how a real world object does
+
+				Object Jordan attributes:
+
+					Name: Jordan Hankison
+					Age: 28
+					Gender: Male
+
+		BEHAVIOURS:
+
+			Objects can also have behaviors that express themselves as methods within the Object.
+
+			Method Types:
+
+				Instance Methods:
+
+					Methods that are created within the instance field. They are tied to the object associated with the class. You need to have created an object to call these methods.
+
+		"OBJECT" CLASS IMPORTANT!!!:
+
+			Every class in Java automatically extends "Object" Object class is the super duper grand fuckin daddy of all classes in Java, it is used to make
+			all other classes. it also has its own built in Methods as well.
+
+	DECLARATION:
+
+		CLASS:
+
+			The class is the blueprint for an object.
+
+		ATRIBUTE DECLARATION:
+
+				Attributes are declared in the "INSTANCE FIELD or VARIABLE"
+
+				They are declared just like any other variable is declared JUST WITH NO VALUE GIVEN TO THEM!
+
+			PRIMITIVE VARIABLE:
+
+				pure value
+
+			REFERENCE VARIABLE:
+
+				points to an object in the heap
+
+			INSTANCE VARIABLE:
+
+				always private, which means they cannot be accessed from outside of the Class
+
+				Instance variables describe the object and they will exist within every instance of the Object you create
+
+							ExampleClass.staticVariable = true;
+
+							ExampleClass name = new ExampleClass();
+
+								sout(ExampleClass.getstaticVariable) -->> "true"
+
+						example:
+
+							private String name ;
+
+						Example:
+
+							public class Example_Dog {
+
+								//This space, before any method is declared is the instance field 
+
+								int age ;
+								String name ;
+								double price ;
+								boolean trained ;
+								String breed ;
+						}
+			STATIC VARIABLE:
+
+				A static variable will retain its value for any future objects created with the class!
+
+					Example:
+
+						public class ExampleClass{
+
+							String name;
+
+							String height;
+
+							static String type;
+						}
+
+						mainMethod{
+
+							ExampleClass e1 = new ExampleClass;
+							ExampleClass e2 = new ExampleClass;
+
+							ExampleClass.type = "Corgi";
+
+							sout(e1.type) -->> "Corgi"
+							sout(e2.type) -->> "Corgi" both ExampleClass objects share the same value of type because type is a static value!
+						}
+
+
+		CONSTRUCTOR:
+
+			DEFINITION:
+
+				Constructors are methods that are invoked every time an object is created without needing an exterior call
+
+			WHAT IS A CONSTRUCTOR:
+
+				Most common usage of constructors is giving an initial state for an object
+
+					Examples of Constructors:
+
+
+
+
+			RULES:
+
+				- Uses same name as class
+
+				- Does not have a return type
+
+				- Constructor Methods MUST have the same name as the Class (this is how it knows it is a constructor of the Class)
+
+			ANATOMY:
+
+				CREATION:
+					When you create a new object, within it's class will often be constructors which pull from an existing method and perform that function immediately 
+
+						Example:
+
+							public class Student {
+
+								public Student(){
+									System.out.println("Constructor"); <-- "Constructs" a part of the class Student automatically that will be run as soon as the class is called and an object created
+								}
+							}
+
+							public class ClassRoom {
+
+								public static void main(String[] args) {
+
+								Student s1 = new Student(); <-- Calls upon Class Student to create the object s1, upon being called, Student will check if there are any Constructor methods and run them
+
+								}
+							}
+
+				ARGUMENTS:
+
+					Constructors can be created either with an argument (args) or without
+
+						Without:
+
+							public Student(){
+								System.out.println("no argument Constructor");
+							}
+
+						With:
+
+							public Student(String sName) {
+								System.out.println("1 arg Constructor");
+							}
+
+					Arguments are used in conjunction with INSTANCE VARIABLES to define an object 
+
+						Example:
+
+							public class Student {
+							String name;
+							String school;
+							int age;
+
+							public Student(String sName, int sAge) {
+								name = sName;
+								age = sAge;
+								System.out.println(“2 arg Constructor");
+								}
+							}
+
+							Above class would be called in the main method as below example:
+
+							Student s1 = new Student("Jordan", 28); <-- Class looks for the arguments: String "sName" and int "sAge" within the brackets when called upon
+
+				<THIS> KEYWORD:
+
+					this. keyword is used to point to the INSTANCE VARIABLES whenever there may be a naming conflict between your CONSTRUCTOR ARGUMENT VARIABLES and INSTANCE VARIABLES
+
+					Example:
+
+						public class Student {
+						String name;
+						String school;
+						int age;
+
+						public Student(String name, int age) { <-- The Argument variables here could conflict with the Instance variables above
+							this.name = name;
+							this.age = age;					   <-- <this> keyword helps us by specifying that we are talking about the INSTANCE VARIABLES not the ARGUMENT VARIABLE
+							//"this.age" refers to instance variable ... "age" refers to the Argument variable//
+							System.out.println(“2 arg Constructor");
+						}
+
+					this(); calls another constructor
+
+				CHAINING CONSTRUCTORS:
+
+					Constructors can call on other constru
+
+		BEHAVIOUR DECLARATION:
+
+			Instance Method:
+
+				The instance method is created within the instance field, It IS NOT A STATIC METHOD!
+
+				ACCESS:
+
+					Instance methods can access all variables within the class;
+
+						Instance variables
+
+						Static variables
+
+						reference variables
+
+				Example:
+
+					// creating class below
+					public class Car {
+
+						String model ;
+
+						****public void goForward()****{
+							
+							System.out.println(model + " going forward");
+						}
+					}
+
+					//next we create an object, declare our
+					//attributes and perform the behavior
+					public static void main(String[] args) {
+						
+						Car c1 = new Car();
+
+						c1.model = "Wrangler";
+
+						c1.goForward();
+					}
+
+					This outputs:
+
+						Wrangler going forward
+
+			STATIC METHOD:
+
+				A static method can ONLY access or modify static variables
+
+
+
+

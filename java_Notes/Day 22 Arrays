@@ -1,0 +1,111 @@
+
+Day 22 Arrays intro
+
+
+ARRAY (object)
+		Single object that holds multiple pieces of data.
+
+	CREATING ARRAY:
+
+			--Square brackets "[]" designate that a data type is an Array--
+
+		SYNTAX:
+
+			dataType [] vairableName = new dataType[ count of items ]{//OPTIONAL!// values, of, data, separated, by, ","};
+
+		EXAMPLES:
+
+			int[] numbers = new int[3];
+				or
+			int numbers[] = new int[3];
+				or
+			int[] numbers = new int[]{0,0,0}
+				or
+			int[] numbers = {0,0,0}
+
+				creates:
+
+					[1] [2] [3]
+					 0	 0 	 0	
+
+	ADDING DATA TO AN ARRAY:
+
+			int[] numbers = new int[3];
+
+				numbers[0] = 2;
+				numbers[1] = 5;
+				numbers[2] = 7;
+		 			or
+	 		int[] numbers = new int[]{2,5,7}
+
+					creates:
+					    
+						[1] [2] [3]
+						 2	 5   7
+
+
+	SPECIAL RULES FOR ARRAY:
+
+		ARRAY USES INDEX:
+
+			Like String objects the index of a piece of data in an array is referenced via the index
+				Index begins with 0
+				int[5] --> 0,1,2,3,4
+
+		NOT RESIZABLE:
+
+			we can not change the size of the array once it has been created (array[5] will always be size 5)
+			you CAN change the content of each location within the array as much as desired.
+
+			array's are NOT CONSIDERED IMMUTABLE. just not resizable.
+
+		DATA TYPES:
+
+			NUMBER ARRAY:
+
+				int, double, byte, etc.
+
+				number arrays default value is 0 or 0.0
+
+		 	EXCLUSIVE TO CHAR ARRAY:
+
+		 		if you try to print out a char array directly it will print out the sequence of characters NOT THE OBJECT HEAP ADDRESS
+
+		 			example:
+
+		 				char[] example = new char[4];
+
+		 				example[0] = 'O';
+		 				example[1] = 'K';
+		 				example[2] = 'A';
+		 				example[3] = 'Y';
+
+		 				System.out.println(example); <--- output = OKAY
+
+					if you don't assign a value to a char array space it will output "null" or empty space " "
+
+			BOOLEAN ARRAY:
+
+				boolean arrays, when not assigned a value are default assigned FALSE
+
+		PROPERTY:
+
+			different than METHOD, properties can be called upon to give you certain data.
+				property does not contain () at the end.
+
+				method is an ACTION, property is a DESCRIPTION of the object.
+
+					string.length(); <-- calculates the length. 
+					array.length; <-- already knows the length (because it was already stated) just showing the info.
+
+				.length
+
+				 	outputs the length of the array (or size)
+
+				 		example:
+				 			int [] example = new int[5]
+				 				sout(example.length) <-- outputs 5
+
+
+
+

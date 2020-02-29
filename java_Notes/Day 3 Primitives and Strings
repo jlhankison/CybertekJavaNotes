@@ -1,0 +1,107 @@
+
+Day 3: Primitives and Strings
+
+
+
+print vs println
+
+	Print:
+		prints but does not move to the next line
+	p
+
+Escape sequence
+	a character preceded by a backslash (\) is an escape sequence and has special meaning to the compiler
+
+	It is used to place special characters and spaces in print and println commands
+		\t places a tab within printed script
+		\n place a return within printed script
+		\' places a ' within printed text
+		\" places a " within printed text
+		\\ places a \ within printed text
+
+Primitives:
+	
+	Integer Type:
+
+		byte:
+			memory used:
+				1 byte
+			range of values:
+				-128 to 127
+			example: 
+				byte byteVar = 127;
+				
+		short
+			memory used:
+				2 bytes
+			Range of values:
+				-32768 to 32767
+			Example:
+				short shortVar = 128;
+				
+		int
+			memory used:
+				4 bytes
+			range of values:
+				-2,147,483,648 to 2,147,483,647
+			Example:
+				int intVar = 32768
+
+		long
+			must use L after number when declaring variable APPARENTLY
+			
+			memory used:
+				8 bytes
+			Range of values:
+				-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+			Example:
+				long longVar = 2,147,483,648L;
+
+ 	Floating Point types:
+
+ 		float
+ 			memory used:
+ 				4 bytes
+ 			example:
+ 				float priceOfTheBook = 49.99f ;
+ 		double
+ 			memory used:
+ 				8 bytes
+ 			range of values
+ 			Example
+ 				double meterTo
+
+ 	Single Character and boolean
+
+ 		Char:
+ 			Type
+ 				Single character
+ 			Memory used:
+ 				2 bytes
+ 			Range of values
+ 				all unicode values from 0 to 65535
+ 			Example:
+ 				char firstLetterOfName = "J" ;
+
+
+ 		Boolean
+ 			Memory used
+ 				1 bit
+ 			range of values:
+ 				True and false
+ 			Example:
+
+
+ 	String:
+ 		String is a sequence of characters, surrounded by double quotes("")
+ 		Example:
+ 			String greeting;
+ 			hello 
+
+ 		
+
+
+
+Be Careful, bears shouldn't ingest large fluffy dogs
+
+	boolean -> char -> byte -> short -> int -> long -> float -> double

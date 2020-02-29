@@ -1,0 +1,66 @@
+
+
+MULTI DIMENSIONAL ARRAY
+
+	An array that can contain other array(s)
+
+		N dimensional array contains (N-1) dimensional arrays
+
+			IE: 3 dimensional array contains (3-1) dimensional arrays --> (3-1) = 2 dimesional array
+
+	SYNTAX:
+
+		Declaration:
+			multi dimensional arrays are initialized by creating multiple square brackets within the variable declaration
+
+				int [][] x --> 2 dimensional array
+				int [][][] x --> 3 dimensional array
+
+			Data:
+				Data is added to multi dimensional arrays by adding curly braces within curly braces separated by comma (,)
+
+					example:
+
+						int[][] x = { {1,2,4} , {6,82,1,3} };
+										      
+						char [][][] y = {  {  {a, b, c} , {x,y,z} } , { {e,t,d} , {p,i,q} } }
+
+				Data is called from multi dimensional arrays by using multiple square brackets behind the variable
+
+					example:
+
+						int[][] example = { {1,2,8} , {12,52,90} };
+
+						sout(example[1][2]) ---> 90
+
+						sout(example[0][2]) ---> 8
+
+	RULES:
+
+		.length property
+
+			with multi dimensional arrays, .length will output THAT LAYER OF THE ARRAY'S LENGTH.
+
+			example:
+				char [][][] y = {  {  {a, b, c} , {x,y,z} } , { {e,t,d} , {p,i,q} , {s,m,i,l,e} } };
+
+				y.length --> 2 (because there are 2 places in the first layer of the array);
+				y[0].length --> 2 (because there are 2 places in the [0] index of the second layer of the array)
+										[[a, b, c] , [x,y,z]]
+				y[1][2].lenght --> 5 (because the [1] index of the second layer and the [2] index of the third layer contains an array with a length of 5)
+										[s,m,i,l,e]
+
+
+
+	ARRAYS METHODS:
+
+			Example Multi dimensional array:
+
+        		char[][] example1 = { {'b','u','t','t'} , {'a','p','p','l','e'} , {'e','t','c'} };
+
+		.deepToString():
+			will print out full multi dimensional array, similar to .toString() method 
+
+			sout(Arrays.deepToString(example1)); --> [[b, u, t, t], [a, p, p, l, e], [e, t, c]]
+
+

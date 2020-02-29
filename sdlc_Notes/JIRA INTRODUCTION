@@ -1,0 +1,45 @@
+JIRA INTRODUCTION
+
+	What is Jira?
+
+		Jira is a project management tool
+
+		Used for:
+
+			Bug Tracking
+
+			Workflow
+
+			Collaboration / comment
+
+	Jira Itself is NOT a test management tool
+
+		XRAY ADDON:
+
+			Xray addon provides extra features 
+
+			Xray Features:
+
+				Test management tools
+
+				Visibility of testing result
+
+				Requirement coverage visibility (RTM)
+
+
+	Jira -> Xray or zephyr
+
+
+	CREATING A TICKET:
+
+		SUMMARY:
+
+			Name of the Ticket (Very brief description)
+
+		ASSINEE:
+
+			Person who will work on the ticket
+
+		REPORTER:
+
+		

@@ -1,0 +1,205 @@
+Linked List
+
+	Linked list 
+
+		Internally is backed by Node
+
+		better for adding or removing items
+
+	ArrayList 
+
+		Internally is backed by array
+
+		better for getting a random item by index
+
+Big O Notation
+
+	This is the way programmers describe the performance of an algorithm time complexity
+
+	O(1) Means more elements in the list does NOT change the time performance
+
+	O(N) Means the list will take more time, performance wise, the more elements you have in the list
+
+Set
+
+	Set is a data structure to store unique elements
+
+	HASHSET:
+
+		HashSet implements Set Interface and always is the default choice
+
+		Rules:
+
+			HashSet DOES NOT keep insertion order!
+
+			HashSet DOES NOT have an index!
+
+			HashSet DOES NOT have any defined order!
+
+	LINKEDHASHSET:
+
+		LinkedHashSet is almost exactly the same as HashSet except that IT WILL KEEP THE INSERTION ORDER!
+
+		LinkedHashSet is slightly slower than HashSet
+
+
+SortedSet
+
+	SortedSet  is a data structure that stores unique elements in a sorted order!
+
+	SortedSet is an interface that extends Set Interface
+
+	TREESET:
+
+		TreeSet will output a natural low to high order while keeping the qualities of set (Unique elements only)
+
+		METHODS:
+
+			.first;
+
+				.first will give you the first (or lowest) element in the list
+
+			.last;
+
+				.last will give you the last (or highest) element in the list
+
+
+MAP:
+
+		Map is a data structure to store key-value paired elements within the collection framework
+
+	HashMap:
+
+		HashMap is the most common implementation of the Map interface
+
+		Like other Hash collections, HashMap does not keep any order to the elements inside
+
+		HashMap CAN NOT keep any duplicates of key-values 
+
+			Example:
+
+				("KeyABC", "Value1"); 
+				("KeyABC", "Value2");
+
+				This ^^ would not compile! The Keys are identical
+
+		Anatomy:
+
+			HashMap is a collection of Key-Linked elements, the first value in each element is the KEY, the second is the value
+
+				hashMap1 = {key1=value1, key2=value2, key3=value3}
+
+			key:
+
+				the key is the element in the key-value pair that links to the value 
+
+				Keys will always be unique
+
+			value:
+
+				when referring to a key-value pair, a value is the information you wish to store with the associated key
+
+			keySet View:
+
+				views all the KEYS in a map
+
+			values view:
+
+				views all the VALUES in a map
+
+			entrySet View
+
+				views all the keys and values within the map
+
+		Rules:
+
+			Keys can NEVER BE CHANGED. it can be removed or the linked value can be overwritten but the key-value pair can not be directly changed
+
+		Methods:
+
+			.put(key, value);
+
+				Put method allows you to add a new HashMap key-linked value element
+
+				value1 is the key 
+
+				value2 is the value
+
+				.put will REPLACE any key-value pair if the key already exists
+
+			.putIfAbsent(key, value);
+
+				Will only add the element IF there is not an existing value of key in the HashMap
+
+			.get(keyValue);
+
+				get method will pull the value of the element based on the key argument 
+
+				if you try to get an element that doesn't exist YOU WILL RETURN A NULL
+
+			.size();
+
+				does the same thing as in any other Collection. Gives you the size of the collection as an int
+
+			.replace(key, newValue);
+
+				will replace the value within key to the newValue
+
+			.replace(key, oldValue, newValue);
+
+				An overload of the .replace method to replace a key associated old value ONLY IF the oldValue matches the key-value pair.
+
+			.containsKey(keyValue);
+
+				Returns a Boolean
+
+				Searches the hashMap for the keyValue and returns a true or false based on whether the key exists or not
+
+			.remove(key);
+
+				the remove method will eliminate the key-value pair ASSOICIATED with the listed key in the method argument
+
+
+	LinkedHashMap:
+
+		Extends HashMap
+
+		This is very similar to HashMap except that it keeps the insertion order and is a little bit slower
+
+	
+SORTEDMAP:
+
+		SortedMap is an interface within the Collection framework, it implements the Map interface 
+
+	TreeMap:
+
+		TreeMap (similar to TreeSet ONLY in that it sorts values) is a Class that allows you to create a map of key-value entries that are sorted BY THE MAPS KEYS!
+
+		Rules:
+
+			-Sorted Maps ALWAYS sort the entry Keys, NOT the values
+
+			-sorts by natural (low to high) order of the key data type		
+
+QUEUE:
+
+	Queue is a "first in first out" collection Interface
+
+	first in first out means that the first thing added will be the first thing modified or removed
+
+		in interview it's (FIFO)
+
+DEQUE:
+
+	Deque is a "last in first out" (LIFO queue) collection Interface
+
+	Deque stands for "Double Ended Queue" meaning you can add or remove items from the front or the end of the queues
+
+	LinkedList works with Deque;
+
+
+
+
+
+
+

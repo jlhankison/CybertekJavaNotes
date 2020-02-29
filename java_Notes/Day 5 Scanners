@@ -1,0 +1,31 @@
+
+
+Day 5
+
+
+Scanner
+	Scanner is a class that comes from the JDK library
+	we can use it to capture keyboard presses 
+
+	Importing Scanner
+
+		in order to use Scanner we have to first import it
+
+
+	Creat scanner object
+	
+		Scanner scanExamp = new Scanner(System.in);
+
+			after you have started a new Scanner (scanExamp) you can reference back to that scanner by using the Scanner Name + .next();
+				this will prompt another input from the user.
+
+				example:
+					String exampleString = 	userInput.next();
+					int exampleInt =  		userInput.nextInt();
+
+	there are a few ways to get user input and store the result
+
+		Getting singe word as String 				--> scan.next();
+		Getting singe NUMBER as int 				--> Scan.nextInt();
+		Getting single fractional number as double 	--> scan.nextDouble();
+		Getting single true or false as boolean 	--> scan.nextBoolean();

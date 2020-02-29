@@ -1,0 +1,158 @@
+COLLECTION FRAMEWORK:
+
+
+	A unified architecture for representing and manipulating collections
+
+		comes with JDK in java.util package 
+
+	BENEFITS:
+
+		Reduces programming effort
+
+	CONTAINS:
+
+		Interfaces
+
+		Implementations 
+
+		Algorithms
+
+	KEYWORDS:
+
+		Collection(s) class:
+
+			Collections class is a util class that does things to various collections
+
+	RULES:
+
+		All collections MUST be objects!
+
+	ITERATING A COLLECTION:
+
+		
+		Iterator
+				This is a .util class that allows us to iterate through any collection
+
+			.iterator();
+
+			this method comes from the Iterable interface
+
+			.hasNext();
+				checks whether you have a next item in the collection
+
+			.next();
+				will pull the next value of the collection 
+
+			EXAMPLE:
+
+				public static void main(String[] args) {
+
+			        Collection<Integer> nums = new ArrayList<>(Arrays.asList(10,4,5,22,88,13)); // <-- this creates an arraylist with the Collection
+			        																				// Super Class
+
+			        Iterator<Integer> myIter = nums.iterator(); // <-- this Links the Iterator class Object with the nums Arraylist via the .iterator() method
+
+			        while (myIter.hasNext()){
+			            System.out.println("myIter.next() = " + myIter.next());
+			            if (myIter.next() < 10 ){
+			                myIter.remove();
+			            }
+			        }
+			        System.out.println("nums = " + nums);
+
+			        System.out.println("myIter.hasNext() = " + myIter.hasNext());
+
+			        System.out.println("myIter.next() = " + myIter.next()); 
+			        System.out.println("myIter.next() = " + myIter.next());
+			        System.out.println("myIter.next() = " + myIter.next());
+			        System.out.println("myIter.next() = " + myIter.next());
+			        System.out.println("myIter.next() = " + myIter.next());
+
+			        myIter.remove();
+
+			        System.out.println("myIter.next() = " + myIter.next());
+
+			        System.out.println("myIter.hasNext() = " + myIter.hasNext());
+
+			        System.out.println("nums = " + nums);
+			    }
+
+
+
+		ForEach Rule:
+
+			If you try to use .remove() with a foreach you will encounter an error called concurrentModificationExcemption (because the array gets smaller as the loop progresses)
+
+		LIST:
+
+			List has an index and can be iterated via a forEach loop Or a standard for loop
+
+	HIERARCHY of classes and interfaces:
+
+		Iterable:
+			Interface
+
+			Collection:
+				Interface
+
+				List:
+					Interface
+					Ordered Collection, May contain duplicate
+
+					THE most common used 
+
+						Rules:
+
+							Only data structure with an index!
+
+					Implements:
+
+						ArrayList
+						LinkedList
+
+
+				Set:
+					A Collection that cannot contain duplicate elements
+					Interface
+
+					One of most common used
+
+					Implements:
+
+						HashSet
+
+					SortedSet:
+						Interface
+
+
+				Queue:
+					Interface
+
+					One of most common used
+
+					Implements:
+
+						PriorityQueue
+
+					A collection that provides first-in-first-out or last-in-first-out structure
+
+					Deque:
+						Interface
+
+						Implements:
+
+
+
+		Map:
+			Interface
+
+			One of most common used
+
+			Implements:
+
+				HashMap
+
+			A collection of key-value pair
+
+			SortedMap:
+				Interface

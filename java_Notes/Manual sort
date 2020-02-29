@@ -1,0 +1,8 @@
+Manual sort
+psudo code
+
+get an array
+
+check each pairing in the array from front two to back two,
+
+if 

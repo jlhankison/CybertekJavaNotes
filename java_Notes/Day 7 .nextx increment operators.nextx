@@ -1,0 +1,49 @@
+
+Day 7
+
+
+Arithmatic operators: + - * / %
+
+	Remainder operator is the remainging part of whole number division
+		10 / 3 = 3 --> int/int = int
+
+.next stuff
+	.nextLine() methods
+		it will capture whole line (until the user presses ENTER on their keyboard)
+
+	.next() method
+		will only capture one word typed by the user (following typed words will be captured by following .next() scanner objects)
+			the way to avoid additional words from being captured to the next scan objects is to open a catch-all scan.next() before the next space for user input.
+
+	THERE IS NO nextChar(); dont try it
+
+	BOTTOM LINE: DO NOT USE NEXTLINE unless your really have to capture more than one word
+
+shorthand examples
+	
+	int score = 10;
+
+	score += 4; --> 14
+	score *= 3; --> 42
+	score /= 2; --> 21
+	score %= 5; --> 1
+
+	------BREAK-------
+	
+	int offer = 2;
+
+	offer += 1; // --> 3
+	++ offer; 	// --> 4   ++ is a shortcut for (variable = variable + 1)
+
+Increment and decrement operator (++ --) has two versions
+
+	int score = 3;
+
+	pre-increment ++score
+		the incremental increase happens BEFORE the variable "score" is read IN THE PRINTLN (println ++score = 4)
+
+	post-increment score++
+		the incremental increase happens AFTER the variable "score" is read IN THE PRINTLN (println score++ = 3)
+
+	pre-decrement --score
+	post-decrement score--

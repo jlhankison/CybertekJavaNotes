@@ -1,0 +1,30 @@
+
+
+day 23 for each loop
+
+FOR EACH LOOP:
+
+	SYNTAX:
+
+		for(dataTypeOfArray variableName : arrayName){ functionPerformedToEachArrayLocation };
+
+		Example:
+
+			double[] sample = {3.5, 9.0, 81, 32.1}
+
+			for(double printMe : sample){
+				sout(printMe);
+			}
+
+				//output = 3.5
+						   9.0
+						   81.0
+						   32.1
+
+	RULES:
+
+		1. can only be used on array
+
+		2. impossible to create infinite loop
+
+		3. Can not be used to make changes to an array!

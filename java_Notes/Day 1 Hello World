@@ -1,0 +1,134 @@
+//DAY 1 
+
+
+Computer (CPU ) understand 0 and 1 
+
+As a programmer ,  we don’t write 0 , 1
+
+
+WE WRITE : SOURCE CODE    just like System.out.println(“hello world”);
+
+Eventually the source code has to be turned into machine code (0 1s).
+
+
+SOURCE CODE  ——               Compiler   / Interpreter      ————  MACHINE CODE (0,1)
+
+ The Java code you write is source code ,  
+
+    | 
+Java Compiler.  —>> this come with the installation of your Java 
+    | 
+
+It will eventually will be turned into machine code (0,1)
+
+
+Java is considered a hybrid language
+
+Java takes middleground when compiling the source code and turning it into machine code
+						Compiler(Converter)
+Java source code----	 byte code						Machine code (0,1s)
+
+
+
+
+Programing Text editor:
+	Sublime, Text++
+
+Like Microsoft word for sourse code, helps with sintax and organization
+
+
+IDE - Integrated Development Environment
+	IntelliJ, Eclipse
+
+Allows you to actually compile and run your programs
+
+psuedocode
+	use human language to outline a structure to your code
+		1. pick up phone book
+		2. open to middle of phone book
+		3. look at names
+		4. if Smith is among names, call Smith
+			5. Else open first quarter of phone book
+			6. Look for Smith among names
+			7. If Smith is among names, call smith
+
+
+Data types:
+	Numeric (int): 123, 3.1415
+	Character (string): "These are words"
+	Logical (boolean): true/false
+
+Data Containers
+	Variables: temporarily hold changable data, can only hold data of its own type (int = numbers, boolean = true/false, string = characters )
+
+	Declaring a Variable
+		Java
+			int score; (declaring the variable is an integer)
+
+
+Conditional Branching ('if then' statements)
+	IF (condition is true) THEN
+		Do this;
+	ELSE
+		Do something else;
+
+
+	Multiple Branches:
+		If True
+			if True
+				execute A
+			else
+				Execute B
+			end
+		Else 
+			If
+				Excecute C
+			Else
+				Excecute D
+			End
+		End
+
+Repetition/Looping
+	
+	"For" Loops
+
+
+Symbol check
+	{Curly Braces} {}
+	[Square Brackets] []
+	(Parentheses) ()
+
+
+
+Java Development Kit (JDK)
+	is Kit which provides the environment to DEVELOP AND EXECUTE(RUN) the Java program. JDK is a kit(or package) which includes two things
+		1: Development Tools(to provide an environment to develop your java programs)
+		2: JRE (to execute your java program).
+			Note : JDK is only used by Java Developers.
+
+Java Runtime Environment (JRE)
+	 is an installation package which provides environment to *ONLY RUN (NOT DEVELOP)* the java program(or application)onto your machine. JRE is only used by them who only wants to run the Java Programs i.e. end users of your system.
+	
+Java Virtual Machine (JVM)
+	is a very important part of both JDK and JRE because it is contained or inbuilt in both. Whatever Java program you run using JRE or JDK goes into JVM and JVM is responsible for *EXECUTING THE JAVA PROGRAM LINE BY LINE* hence it is also known as interpreter.
+
+
+JDK  (contains:) Development kit (what you need to write program)
+	JRE (contains:) L
+		JVM
+
+JavaVirtualMachine is essentially creating the platform JUST ABOVE machine code (like a mini operating system almost) that can read BYTECODE by using files and information in the JavaRuntimeEnvironment
+
+HelloWorld.Java
+	Java Compiler (JAVAc in JDK)
+		HelloWorld.class (HelloWorld.java compiled into ByteCode Executable class)
+			Java Virtual Machine (can be ran on any system)
+
+	Write Once Run Anywhere (WORA)
+
+	JAVA BYTE CODE CAN RUN ANYWHERE THAT HAS JVM 
+	THAT’S HOW JAVA IS A  WRITE ONCE AND RUN ANYWHERE LANGUAGE
+
+
+
+

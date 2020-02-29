@@ -1,0 +1,87 @@
+
+Day 11 soft skills
+
+HOMEWORK:
+	flipgrid self introduction
+		DUE: 12/01/2019
+
+
+
+Definitions
+	Functionality:
+		the ability of the system to do the work for which it was intened
+
+	feature:
+		a distinguishing characteristic of a software item
+
+	Module:
+		is a standalone piece of code that provides specific and tightly coupled functionality
+
+	Test Environment:
+		A testing environment is a setup of software and hardware for the testing teams to execute test cases. (Development environment, test environment, production environment)
+
+SDLC (software development lifecycle)
+
+	Requirement gathering
+
+		a requirement is a description of feature and functionality of the target system.
+
+		a requirement is a specification of a need or desire. it tells you what is the expected result for a particular application/product.
+
+		requirement (waterfall methodology) = user story (Scrum or agile methodology)
+
+		Three Amigo meeting;
+			Tester
+			business analyst
+			development
+
+		SMART criteria
+			Specific
+			Measurable
+			Attainable
+			Realistic
+			Testable
+
+	design
+
+		the purpose of design phase is to transform the requirements into complete and detailed system design specifications
+
+		scrum team 
+			reports to scrum master
+
+		dev team 
+			reports to dev head	a person who has development background but doesnt often actually do the coding
+
+		Testing team
+			reports to test head, a person who has testing background but doesn't often do the testing anymore
+
+		BA Team
+
+		DBA - data base archetecture
+
+
+	Develping/coding
+		Developers write code to build the application
+
+
+
+	Testing
+
+		STLC (Testing life cycle)
+
+		Regression testing is done to make sure that all elements (modules) of the product are meshing properly with each other
+
+			regression testing is about 65% automated
+
+
+
+	Deploying/production
+
+	Maintining phase
+		this phace occurs after the product is in its full opperation it includs software updates repairs and fixes of the software if it breaks
+
+			testing is done for after all sorts of stiuations, browser updates, Operating system updates, java updates, etc
+
+		Re-testing is done after a product or module has already been released
+
+

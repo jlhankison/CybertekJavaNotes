@@ -1,0 +1,23 @@
+INTERFACE VS ABSTRACT CLASS
+
+
+Instance field YESNOStatic filed YES YES (ONLY PUBLIC STATIC FINAL- CONSTANT)Constructor YES(any class WILL have constructor)NO!!!!!Abstract Instance method YES YES (all methods with no body in interface)Non-asbtract instance methodYESOnly Non-asbtract method in interface is default methodStatic method YES YES (static method with body)Default method NO!!!!!!!YES (Only interface have default method)Abstract method access modifierAll expect private : there is no private abstract method anywherePublic (ONLY PUBLIC , if no access modifier used, it will be automatically public)Instance field access modifierALL !!!!!—Static field access modifierALL !!!!!Public Non-asbtract instance method access modifierALL !!!!!default method should be public ( until java 9 ) ( after java 9 private default method was allowed)Static method access modifierALL !!!!!Public
+
+WHEN TO USE:
+
+	ABSTRACT CLASS:
+
+		If we have shared instance fields we want sub classes to have. 
+
+		If we want to provide reusable constructor logic to sub class.
+
+		If you only want this to be a super class
+
+
+	INTERFACE 
+
+		If you want a class that can implement more than one interface. 
+
+		if you dont have any instance fields to share with sub classes and if you want to only share constants. 
+
+		Interface allow the implementing classes to have less or no relationship with each other at all -- known as loosely coupled 

@@ -1,0 +1,58 @@
+@OVERRIDE
+
+	@Override is an annotation that replaces the Super type method of the same name and arguments
+
+	
+
+	RULES:
+
+		When Overriding a method YOU MUST HAVE THE EXACT SAME METHOD SIGNATURE (name and arguments) to properly override.
+
+		Example:
+
+
+			SuperClass:
+
+				protected void method (String arg1, int arg2);
+
+			SubClass:
+
+				@Override
+				protected void method (String arg1, int arg2); //<--- this will properly override because the method signature is Identical to the super
+
+				@Override
+				protected void method (Object arg1, int arg2); //<--- this will not be a proper override but a OVERLOAD of the super method, because the
+																// signature is not identical
+
+
+	Objects method Overriding
+
+		These Methods within Object class are commonly overridden because they are AUTOMATICALLY used by many different classes and methods
+
+			.toString();
+
+				This is a common override
+
+				Original code:
+
+					public String toString() {
+        				return getClass().getName() + "@" + Integer.toHexString(hashCode());
+    				}
+
+				USAGE:
+
+					This method is used often because if you ever try to print an object of any kind ( system.out.println(ExampleObject) ) it will automatically print out the .toString method, which will automatically give the HASH CODE ADDRESS of the example object
+
+			.equals(Object obj);
+
+				Original code:
+
+					public boolean equals(Object obj) {
+        				return (this == obj);
+    				}
+
+
+				USAGE:
+
+					This method usually comes up when comparing two example objects ( ArrayList.contains(ExampleObject) ). If you do not override this method,
+					any instance of comparing two objects will check for THE EXACT SAME OBJECT (not a different object with equal values) WITHIN THE HEAP.

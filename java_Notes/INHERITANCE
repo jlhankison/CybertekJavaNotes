@@ -1,0 +1,147 @@
+INHERITANCE
+
+	Classes can "INHERIT" qualities from other classes that both classes share in common
+
+	DESCRIPTION:
+
+		When writing multiple classes that share attributes or behaviors, we can use inheritance to pass some of those qualities the original class to the new class
+
+		Names:
+			Inheritance relationships have several different names, here are a few (they all represent the same thing)
+
+				Base Class --> Derived Class
+
+				Super Class --> Sub Class
+
+				Parent Class --> Child Class
+
+	DECLARATION:
+
+		KEYWORDS:
+
+			extends:
+
+				When declaring a SUB CLASS you must use the keyword "extends" in the declaration line of your class:
+
+				Example:
+
+					public class Person{
+
+						String species;
+						String fingers;
+					}
+
+					public class Student extends Person{
+
+						//String species will be here (not seen though)
+						//String fingers will also be here (not seen though)
+					}
+
+			super(argumentsHere);
+
+				the super keyword allows you to inherit constructor elements from the SuperClass 
+
+				if there is 
+
+				can only be called on ONCE!!
+
+				unless you have already input super(); somewhere in your class super will always be inserted in your code by the compiler.
+
+				IMPORTANT! if you have Any constructors in the SuperClass, the subclass will default attempt to get the constructor from the super class.
+					if there is not a No Arg Constructor in the superclass, You Will Get An Error In The SubClass!!! 
+
+
+
+
+
+		ACCESS MODIFIERS:
+
+				access modifiers dictate whether a piece of code can be accessed outside of the class code and package.
+
+				access modifiers can only be created in the Instance Field. it will give you an error in the main method
+
+			Access Order:
+
+				from most access to least access;
+
+					public -->> protected -->> default -->> private
+
+			Default:
+
+				whenever you create a variable without specifying its Access modifier it will be set as DEFAULT
+
+					default access modifier is public BUT ONLY WITHIN ITS PACKAGE, Outside its package you will not be able to access the variable
+
+				Example:
+
+					String name; <-- no modifier in front of String so it is a default modifier
+
+			Protected:
+
+				when a variable is "protected", the variable is accessable to any SUBCLASS OF THE SUPERCLASS in which it was written BUT NO WHERE ELSE!
+
+				Example:
+
+					public class SuperClass {
+
+						protected int num = 5;
+
+					}
+
+					----------------------------------------------
+
+					import package1.Superclass;
+
+					public class SubClass extends SuperClass {
+
+						sout(num); //<--- even though SubClass is in a different package, it is still able to inherit the variable num because of the "protected" access modifier
+					}
+
+			Public: 
+
+				public variables can be accessed by any other class or package freely
+
+			Private:
+
+				private variables are restricted to only within the current Class, they can not be directly referenced in other classes. however they can
+				be accessed via public methods (getters, setters, etc.)
+
+
+
+
+		INHERITED QUALITIES:
+
+		 	when you inherit a Super Class only some of the attributes and behaviors are inherited while others are not.
+
+			 	public (YES):
+
+			 		public variables and methods are inherited via the EXTENDS keyword
+
+			 	private (NO):
+
+			 		private variables and methods are NOT inherited into the SUB CLASS 
+
+			 		you can access private attributes via public methods (behaviors) such as getters and setters
+
+		 		Constructors (NO):
+
+		 			Constructors are NOT inherited into the SUB CLASS
+
+	MULTI LEVEL INHERITANCE:
+
+		Inhertiance can happen in a single instance or in several layers. Here are some of the types of inheritance in Java
+
+	"OBJECT" CLASS IMPORTANT!!!:
+
+			Every class in Java automatically extends "Object" Object class is the super duper grand fuckin daddy of all classes in Java, it is used to make
+			all other classes. it also has its own built in Methods as well.
+
+	RULES:
+
+		A class can only inherit ONE other class, however a class CAN BE INHERITED by as many other classes as you wish
+
+		When a subClass inherits a superClass it only inherits Visible qualities from the superClass (that is, attributes and behaviors that the
+		 subclass can access from the superclass such as: public, protected, and, if it is in the same package, default.)
+
+		Always add a no arg constructor in superClass to avoid unnecessary error in sub class AUTOMATICALLY calling the superclasses no arg constructor
+

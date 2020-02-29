@@ -1,0 +1,58 @@
+OBJECT CASTING
+
+Within Polymorphism, you can cast an object UP to a higher super class (maxing out at "Object" class) or cast DOWN to a child class (bottoming out at the objects specific class)
+
+	UP-CASTING:
+
+		Up-casting is the process of casting a more specific (or smaller, or sub class) object within a more abstract (or larger, or super class) object.
+
+			Example:
+
+			Object exampleName = new Dog(exampleArg);
+
+			^^ Object is the grand daddy of all classes, which all other classes inherit.  By creating a new Dog object within the rules of Object class allows you to group very dissimilar classes together
+
+			RULES:
+
+				1.)  When up-casting your object is IMPLICITLY created (similar to up-casting in primitives)
+
+					Example:
+
+					Circle c1 = new Circle(); // <-- Circle object created
+
+					Shape s = c1; // <-- Circle object is implicitly
+									// casted to Shape
+
+
+
+	DOWN-CASTING:
+
+		Down-casting is the process of casting an object to a smaller (or sub class) object.
+
+		RULES:
+
+			1.) When Down-casting you MUST Explicitly cast into the smaller class (Just like when down-casting primitives).
+
+				Example:
+
+				Object o = new Dog(); // <-- Object is created here
+
+				Dog d1 = (Dog) o;  //<-- This explicitly casts Object o to
+									// the smaller type Dog.
+
+			2.) When down-casting the object that we are down-casting to the subtype MUST have been originally instantiated via original subtype
+
+			Example:
+
+			Object o = new Dog();//<-- Creation of the object
+
+			Dog d1 = (Dog) o; //<-- Down-casting Object "o" to Dog type 
+
+			Cat c1 = (Cat) o; //<-- this will fail to cast because Object o
+								// was originally instantiated with Dog
+								// class
+
+		EXCEPTION ERRORS:
+
+			1.) Down-casting will throw an exception error when you try to cast a SUPER TYPE OBJECT (Example: Object o = new Object();) 
+			into a sub type (Example: Dog d1 = (Dog) o)

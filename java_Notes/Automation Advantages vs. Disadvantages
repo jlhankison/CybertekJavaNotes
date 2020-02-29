@@ -1,0 +1,83 @@
+Automation testing Advantages vs. Disadvantages
+
+
+DISADVANTAGES:
+
+	*Confirmation of the known:
+
+		Automation allows you to confirm that a function or application performs as desired after changes are made to it (aka regression testing).
+
+		Automation is particularly suited to this task because it is almost entirely tests you have already performed.
+
+	*Quick feedback:
+
+		When we use automated testing, we will receieve very quick feedback of errors, particularly when performing updates
+
+	*Fast execution of checks:
+
+		Just like everything in code, the initial writing of a script can take a long time to perform, but once written, an automated test script can perform its 
+		tasks at many times the speed a human could perform them . 
+
+	*Frees up tester's time:
+
+		While automated testing performs regression testing on existing functions, human testers will have more time to dedicate to exploritory testing of
+		new features (which will later be automated for future regression testing).
+
+	*The dev team can contriblute:
+
+		Automated testing scripts are usually written in the same language as the application which means that the development team should have the same access
+		and understanding of the testing language, therefore the responsibility of testing does not lie only with the human testers.
+
+
+DISADVANTAGES:
+	
+	*False sense of quality:
+
+		Automated checks only test what they are programmed to test, a non-thorough testing script could report a fully functioning application but fail to 
+		spot major flaws because it was not coded to look for these flaws.
+
+	*Not reliable:
+
+		Automated checks can fail for a variety of factors not related to the application itself. Network problems, updated UIs, or other functions being down can 
+		effect the reliability of an automated check, potentially throwing false red flags.
+
+	*Test Automation is not Testing:
+
+		Standard testing requires the flexibility and knowledge of the whole that automation testing cannot provide. If a human tester is an architect, with full knowledge of the plans and purposes of the whole. An automated testing script is like a crane, very useful and more powerful than the architect at its specific task, but unable to conceptualize the whole.
+
+		While Automation testing is extremely useful at simplifying a testers work of repetitive tasks and regression testing, it cannot (as of yet) take the place of exploritory testing, where a human tester searches for flaws in a newly written application.
+
+	*Maintenance work:
+
+		As applications evolve and change, so must the automated checks. The validity of precoded test scripts must be regularly updated an maintained as the expected output of applications change over time. This takes time, effort, and resources.
+
+	*Slow feedback:
+
+		While automation testing is useful for groups of code that require frequent testing in the future, one off tests are often best performed manually because of the time and complexity required to write scripts to perform said tests.
+
+		Also, often Automated testing must complete its full script before reporting any bugs to the human tester, which can sometimes take longer than simply running a manual test on the specific functionality.
+
+	*Many bugs not found:
+
+		Often bugs are found by accident while performing exploratory testing due to the semi-randomness of human/ manual testing.  Automated testing however will always follow the same script in exactly the same way, resulting in fewer "random" bugs being found.
+
+
+
+Flipgrid script:
+
+	Advantages and disadvantages to compare:
+
+		1: Confirmation of the known <--> false sense of quality / not reliable 
+
+			Automation can confirm to us that functions/ applications we have already tested still perform under the same tests, but major bugs can slip between the cracks in automation testing because the test script will only perform the checks it's coded to perform. If the tester failed to apply
+
+		2: Fast execution of tasks   <--> Slow feedback
+
+		3: Quick feedback 			  <--> Many Bugs not found
+
+		4: Dev team can contribute   <--> Maintenance work
+
+		5: Frees up testers times 	  <--> Test Automation is not Testing
+
+
+

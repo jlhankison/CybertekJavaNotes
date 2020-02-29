@@ -1,0 +1,46 @@
+SDLC Tester
+
+
+Steps for testing:
+
+	1. Requirement Analysis
+
+		Testing team should read the requirement CAREFULLY
+
+		Testing team should study requirement from a testing point of view (whatever the fuck that means, lady).
+
+		Team lead assign requirement/user story, or you may choose
+
+	2. Rest Plan Creation
+
+	3. Test Case Creation
+
+
+Test Scenario vs. Test case vs Test Script
+
+	Scenario:
+
+		"what to test"
+		
+		Test Scenarios are the overhead ideas behind test cases. "I want the user to be able to log in with correct credentials" is a test Scenario that has many test cases associated with it.
+
+	Case:
+
+		"how to test"
+
+		Much more specific, test cases walk through each step of the QA, writing down the steps taken clearly so that the result can be duplicated exactly
+
+		input valid credentials --> user: abc@gmail.com pass: 123456 into a login prompt and press "Login". Should result in opening the corresponding user profile page
+
+		Like this ^^ but even more specific! 
+
+		this testing is done manually! Using Jira
+
+	Script:
+
+		"repeat ad infinitum"
+
+		Test Scripts are scripts written by the automated testers to automatically run regression testing.
+
+		Scripts are usually just test cases put to code to automate the process. THIS IS WHY IT'S IMPORTANT TO BE VERY SPECIFIC IN YOUR DOCUMENTATION!!
+

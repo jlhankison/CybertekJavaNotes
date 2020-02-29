@@ -1,0 +1,108 @@
+CONSTRUCTORS
+
+	DEFINITION:
+
+		Constructors are methods that are invoked every time an object is created without needing an exterior call
+
+	WHAT IS A CONSTRUCTOR:
+
+		Most common usage of constructors is giving an initial state for an object
+
+			Examples of Constructors:
+
+
+
+
+	RULES:
+
+		- Uses same name as class
+
+		- Does not have a return type
+
+		- Constructor Methods MUST have the same name as the Class (this is how it knows it is a constructor of the Class)
+
+	ANATOMY:
+
+		CREATION:
+			When you create a new object, within it's class will often be constructors which pull from an existing method and perform that function immediately 
+
+				Example:
+
+					public class Student {
+
+						public Student(){
+							System.out.println("Constructor"); <-- "Constructs" a part of the class Student automatically that will be run as soon as the class is called and an object created
+						}
+					}
+
+					public class ClassRoom {
+
+						public static void main(String[] args) {
+
+						Student s1 = new Student(); <-- Calls upon Class Student to create the object s1, upon being called, Student will check if there are any Constructor methods and run them
+
+						}
+					}
+
+		ARGUMENTS:
+
+			Constructors can be created either with an argument (args) or without
+
+				Without:
+
+					public Student(){
+						System.out.println("no argument Constructor");
+					}
+
+				With:
+
+					public Student(String sName) {
+						System.out.println("1 arg Constructor");
+					}
+
+			Arguments are used in conjunction with INSTANCE VARIABLES to define an object 
+
+				Example:
+
+					public class Student {
+					String name;
+					String school;
+					int age;
+
+					public Student(String sName, int sAge) {
+						name = sName;
+						age = sAge;
+						System.out.println(“2 arg Constructor");
+						}
+					}
+
+					Above class would be called in the main method as below example:
+
+					Student s1 = new Student("Jordan", 28); <-- Class looks for the arguments: String "sName" and int "sAge" within the brackets when called upon
+
+		<THIS> KEYWORD:
+
+			"this" keyword is used to point to the INSTANCE VARIABLES whenever there may be a naming conflict between your CONSTRUCTOR ARGUMENT VARIABLES and INSTANCE VARIABLES
+
+			Example:
+
+				public class Student {
+				String name;
+				String school;
+				int age;
+
+				public Student(String name, int age) { <-- The Argument variables here could conflict with the Instance variables above
+					this.name = name;
+					this.age = age;					   <-- <this> keyword helps us by specifying that we are talking about the INSTANCE VARIABLES not the ARGUMENT VARIABLE
+					//"this.age" refers to instance variable ... "age" refers to the Argument variable//
+					System.out.println(“2 arg Constructor");
+				}
+
+		CHAINING CONSTRUCTORS:
+
+			Constructors can call on other constru
+
+
+
+
+

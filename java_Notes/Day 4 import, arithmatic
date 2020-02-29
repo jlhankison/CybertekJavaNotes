@@ -1,0 +1,56 @@
+
+
+Day 4
+
+
+Arithmetic Operators:
+
+	raw udefined numbers will be interpreted by java as "int" and will also produce int. (1, 5, 200, 18)
+
+	Data Types:
+		arithmetic operator between to int -->> another int
+
+		Arithmetic operator between two numerical data types the final result wil be the larger data type
+
+	+
+		basic addition
+
+	-
+		basic subtraction
+
+	*
+		Basic multiplication
+	/
+		basic division
+			will produce a the nearest whole number if defined as int
+				5/3 = 1 (not 1.66666...)
+
+	%
+		Remainder/ modulus
+
+Importing Java classes
+	
+	Java classes are organized into packages and need to be imported to your class to be used.
+
+		Example:
+			Scanner
+				import java.util.Scanner;
+			Time
+
+
+Scanners:
+	How a user interacts with a program, user types or interacts with program in some way and that is turned into input for the code.
+
+		
+			import java.util.Scanner;
+				
+				This imports the "Scanner Class" to your current code in java
+
+			Scanner userInputHere = new Scanner(System.in);
+				
+				This makes the program ask a question of the user which will be stored as "userInputHere"
+
+			String variableHere = userInputHere.next();
+				
+				This converts the input in "userInputHere" to a String, labeled "variableHere".
+					You must add .next(); to capture single words scanned by the Scanner Class

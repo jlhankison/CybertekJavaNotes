@@ -1,0 +1,53 @@
+
+
+Day 6
+
+
+WAKE UP TASK:
+
+Create a program to calculate the final discounted price of an item
+
+Create three  variables called regularPrice, salePrice, and discount
+
+Ask user for questions using scanner for regularPrice and discountPercentage and save the result into the variables
+
+Calculate salePrice using above invormation
+
+example: 80 regular price, 0.2 for discount
+
+	Print out: regular price = 80 
+				discount is 0.2
+				your price is =
+
+
+Shorthand operators or compound operators
+	
+	+=, -=, *=, /=, %=, ++, --
+
+	these shorthand operators give you the same result as using a variable on both sides of the = 
+		example:
+			Original equation: variable = variable + 10;
+			shorthand version: variable += 10;
+
+			Original equation: variable = variable % 5;
+			shorthand version: variable %= 5;
+
+	Since increasing or decreasing a value is very special and often used in programing
+
+			there is an even shorter shortcut for this operation
+
+			we can use ++ or --, THIS IS EXCLUSIVELY FOR INCREASING OR DECREASING BY 1
+				Example 
+					Original equation: 			variable = variable + 1
+					first shorthand option: 	variable += 1
+					second shorthand option: 	++ variable
+						all three options output the same value
+
+					Original equation: 			variable = variable - 1
+					first shorthand option: 	variable -= 1
+					second shorthand option: 	-- variable
+						all three options output the same value
+
+
+
+		This shorthand helps declutter your code and makes your typing and code structure more efficient.

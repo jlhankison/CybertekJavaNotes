@@ -1,0 +1,152 @@
+
+//Day 2
+
+
+
+Storing Data:
+	
+	Variable
+		Is used to store data, has 3 parts
+			Name - Type (Int, string, boolean) - Value
+
+
+Sequence of Instructions:
+	Just like a recipe, steps are executed from top to bottom,
+	The outcome can be different according to the order
+
+		Conditional Statement:
+			If there is Whole Milk
+				Buy whole milk
+			Else
+				Buy 2 percent Milk
+
+			1, Situation 1 --> Store has whole milk 		 --> 1st Path
+			2, Situation 2 --> Store has only 2 percent Milk --> 2nd Path
+
+		Task 1:
+
+		1, Prime 
+
+		situation 1 --> prime member buys any product --> buyer does not pay shipping
+
+		Situation 2 --> non prime member buys >$25 product --> Buyer pays for shipping
+
+		Situation 3 --> non prime member buys <$25 product --> Buyer does not pay shipping
+
+
+Repetition/Loop
+	Sending happy new year to all the contacts in contact list
+	Write once and send to all the contacts until there are no more contacts
+
+
+IntelliJ comments:
+	// This is called comment and it always starts with double forward slash
+	        //compiler wil IGNORE THIS
+
+	        //This is a great way to write psudocode
+	        
+	        //JAVA IS CASE SENSITIVE LANGUAGE
+	        //system and System are very different things in Java
+	        //Hello and hello are different
+
+	    You can use // to "comment out" some lines of code
+
+
+IntelliJ package, project, and class manipulation:
+
+	in IntelliJ you only want to write under the src (source code) packages (package = files in Java)
+
+	main.java  is our source code that we write code to
+
+	Java Project
+		.idea folder --> this is the folder for IntelliJ idea
+			No need to worry about this folder, dont run or open
+		src --> 
+			THis is where are src (source code) Files are stored, only folder we really care about
+		placeholder.iml 
+			ignore this
+		Scratches and Consoles
+			Ignore this also
+
+	to create new PACKAGE
+		Project
+			src
+				right click
+					new
+
+	Can click on "project" then select "production" from the dropdown menu to hide all packages except 'src'
+		*Cleans up your project build menu on the left*
+
+
+IntelliJ tips, tricks and Rules:
+
+	Java is very strict with sintax
+
+	Syntax errors will be underlined in red, intelliJ will give suggestions to fix if you hover your mouse
+
+	Can type "main" in new Java Class as a shortcut to write main method:
+		"public static void main(String[] args) {}"
+
+	White spaces (tab, Return, Space) don't matter between statements
+	but DOES MATTER when in variable names 
+		("variableOne" = OK, "variable One" = NOT OK)
+
+	
+VARIABLES:
+
+	DECLARATION:
+
+		PARTS:
+			Data type (int, str, boolean)
+			Name (what do you call the variable)
+			assignment operator: "=" (int = 123)
+			Value (123, True/False, "example")
+
+		Java is "strongly-typed language":
+			you must predefine the data type of the variable before using it.
+			only declared type of data can be assigned
+
+	CONCATINATION:
+		Combining two pieces of information (stacking information)
+			(System.out.println( var1 + var2 + "hi") = "var1 var2 hi"
+
+
+NAMING RULES:
+
+	RULES FOR ANY NAME (variable, class Name, package name):
+		No spaces within any name:
+			("invalid Name")
+		Reserved Keywords are not to be used as variables
+			(for, if, boolean, int, else... etc)
+		Characters:
+			A-Z, a-z
+		Numbers:
+			0-9 (Should not start with a number)
+				can contain or end with a number
+		Underscore, Dollar sign:
+			Allowed but not encouraged
+			
+
+	NAMING CONVENTIONS (guideline):
+		Class:
+			Should always begin with uppercase
+			if you have more than one word: Camel case
+
+		Package;
+			Should always start with lowercase
+			if you have more than one word: underscore
+
+		Variable:
+			Should always start with lowercase
+			if you have more than one word: camel case
+			"exampleVariable"
+
+		All NAMES:
+			should be descriptive to make it obvious to see the purpose of creating them
+
+			Camel Case:
+				(following "words" in names should be capitalized)
+					"camelCaseExample"
+
+
+

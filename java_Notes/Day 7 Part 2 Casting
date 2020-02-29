@@ -1,0 +1,57 @@
+
+Day 7 Casting!
+
+
+Type Casting
+	
+	Converting one data type to another
+	
+	Primitive data types:
+
+		Implicityly
+			Means automatically converted
+
+				Widening (upcasting) primitive conversions happen implicitly 
+
+					int a = 10;	
+					long b = a; 
+								int is a smaller data type so it fits into a long without any extra instruction --> implicit casting
+
+		Explicitly
+
+				Narrowing (downcasting) Primitive conversions have to be explicitly cast
+					long a = 10L;
+					int b = a; <-- COMPILER ERROR!!!
+					int b = (int) a; <--properly cast w/ instructions (int)
+								
+						long is a larger data type so it needs further instruction (int) --> explicit casting
+
+			Truncation
+				When converting from a larger data type to a smaller data type the excess data is lost or TRUNCATED
+
+					example:
+						double a = 9.99d; --> double a = 9.99
+						int b = (int) a;  --> int b = 9 after truncation
+
+		boolean, char, int, byte... etc.
+
+			examples:
+				int a = 10;
+				long b = a;
+
+	Special case of char to int
+
+		char to int conversions happen implicitly because int is a WIDER data type
+			char will convert into int as the character's ascii number representation
+
+			char 
+
+	Special case of int to char
+		Narrowing primitive conversions have to be explicitly cast, because char is NARROWER
+
+			int n = 100
+			char example = (char) a (example = "d")
+
+	Reference data types:
+
+	

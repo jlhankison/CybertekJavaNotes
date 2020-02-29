@@ -1,0 +1,15 @@
+ENCAPSULATION
+
+	Encapsulation changes the status of an INSTANCE VARIABLE
+
+		String example; <-- is a public variable that could be changed from the outside (xObject.example = "bla bla")
+
+		private String example; <-- is a private variable that can be changed from the outside (xObject.example does not exist!)
+
+	ANATOMY:
+
+		Private:
+
+			Private encapsulators designate that the Instance variable can only be modified within the class. 
+
+				Constructors are needed to change the value of private variables

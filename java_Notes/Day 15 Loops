@@ -1,0 +1,74 @@
+
+Day 15 LOOP INTRO!
+
+
+LOOPS
+	iteration
+		looping allows you to repeat a function 
+
+
+	WHILE LOOP
+
+		psudo code
+			while(A condition is TRUE){
+				REPEAT THIS ACTION
+			}
+
+		CONDITION WILL KEEP REPEATING THIS ACTION FOREVER UNTIL CONDITON IS FALSE
+
+		psudo code
+			int x = 0 
+			while(x<5){
+				System.out.println("Happy New Year!")
+				++x
+			}
+
+	DO WHILE LOOP
+
+		will perform your function WHILE a condition is true
+			the difference is:
+				THE FUNCTION BEING PERFORMED WILL HAPPEN FIRST BEFORE THE CONDITION IS CHECKED
+
+		do{
+			//function goes here. function is performed BEFORE the while condition is checked
+		}while(//condition goes here )
+
+	FOR LOOP
+
+		FOR anatomy;
+			for (int x = 1 ; x < 5 ; x++){
+				//code here
+			}
+
+			initialization
+				int x = 1
+
+				first step (is ignored after variable is initialized)
+
+			termination conditon
+				x < 5
+
+				second step, checks the conditon for a FALSE
+
+			function area
+				//code here
+
+				third step, performs the code within the loop
+
+			increment
+				x++
+
+				modifies the value of the variable in the termination condition
+
+		Loop Control commands
+
+			break
+				can be used in any type of loop
+
+				if a line that contains break reaches the loop, it will stop!
+
+
+			continue
+				can be used in any type of loop
+
+				if a line contains continue it will SKIP TO the next iteration

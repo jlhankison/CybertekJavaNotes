@@ -1,0 +1,187 @@
+
+Day 11
+
+warm up
+	4 switches in your home to turn on
+		bedroom
+		living room
+		kitchen
+		hallway
+
+Conditional Operators
+
+	&, &&, |, ||,
+
+	AND
+    	&& 2 ampersand, & 1 ampersand --> Logical AND operator
+    	this is used to check if both conditons are true at the same time
+
+	   Combining multiple conditions together
+
+        in java there is no range check
+            example
+            in math: 60 < x < 100 --> would translate to (true < 100)
+            in Java: (x > 60) && (x < 100)
+
+    	Examples:
+	        	              true      true
+	        int x = 70;  x > 60 && x < 100; (TRUE)
+
+	                     false      true
+	        int x = 10;  x > 60 && x < 100; (FALSE)
+
+	                      true       false
+	        int x = 110;  x > 60 && x < 100; (FALSE)
+
+	                      true      true
+	        int x = 99;  x > 60 && x < 100; (TRUE)
+
+	OR
+		"||" double pipe or "|" single pipe is used for compiling 2 conditions
+
+			Logical "OR" operator
+
+			When you have two or more conditions to check
+				As long as ONE of the conditions are true the WHOLE RESULT will be TRUE.
+
+			examples:
+
+							true    false
+				int x = 70; x>10 || x<5 --> TRUE
+
+						   false   false		
+				int x = 7; x>10 || x<5 --> FALSE
+
+						    true    false
+				int x = 17; x>10 || x<5 --> TRUE
+
+						    false   true
+				int x = -8; x>10 || x<5 --> TRUE
+
+	NOT (!)
+		LOGICAL NOT OPERATOR "!" exclamation mark is used to negate the boolean value
+
+       	CAN NOT BE USED ON ANY OTHER DATA TYPE OTHER THAN BOOLEAN
+            *** != is an operator, not a data type
+
+        ! can be used directly to the value (true/false --> !true/!false)
+
+
+
+
+OBJECTS INTRO!
+
+	Classes
+		each object is created FROM the corresponding class
+
+			this is why anything that is not primitive we call it object type or class type
+
+		Whenever a class is created, it can be a data type
+
+			example --> string has its own class --> String s;
+
+		INSIDE A CLASS
+			a class defines properties and behaviors of the object
+
+			every object created out of this template/blueprint will all have the same properties and behaviors 
+
+		Object Behaviors:
+			Some behaviors can be performed directly without extra instruction  
+
+			Some other behaviors need external data / extra instruction while performing the actions 
+
+				
+
+				Below are some real life example and how they might look in Java:
+
+					Tell me the length of this table  —>   tableObject.length() ;
+					Display the mileage on the car —>   carObject.displayMileage() ;
+
+				    Change direction of the car to the right —-> carObject.changeDirection( “right”) ;
+			    	Go run 5 miles    —>personObject.runMiles( 5 ) ; 
+			    	Study subject Java.  ——>     studentObject.study(“java”);
+			    	Study with full dedication.  ——>     studentObject.studyWithFullDedication(true);
+
+			    	Tell me your first name and last name ——> personObject.showName(“john”, “adam”);
+			    	Study java for 5 hours today at library ——> studentObject.study(“java”, 5 , “Library”); 
+
+
+	    	Some behaviors generate a result after execution This result can be saved and used for later or directly used after performing actions 
+
+			Some behaviors do not generate any result , it purely to perform an action
+
+		How Primitives and Objects are stored in memory
+
+			STACK
+				Primitives are containers "shaped" to hold certain primitive data types
+					PRIMITIVES are STORED in a memory location called STACK
+						stack is a bit more individual to the particular program being run (more private)
+				reference types
+					^what is used to reference to an address IN 
+
+			HEAP
+				Objects
+					OBJECTS are stored in more public locations called HEAP
+						objects have an "address" so that they can be CALLED UPON to be used in the code
+
+					Object type, reference type
+						these "types" are just ways of controling or using the object 
+
+						Example
+
+							String str1 = new String("Hello");
+								**"str1" is the ADDRESS to reference the stored OBJECT "STRING("Hello")" from the HEAP
+
+							String str2 = new String("World"); 
+									str2 goes to the STACK to store the ADDRESS to FIND the STRING OBJECT in the HEAP
+
+
+								**str2 DOES NOT HAVE INHERENT VALUE it is just a REFERENCE TYPE/OBJECT TYPE used to access/control the NEW OBJECT which CONTAINS "World"
+
+							int x = 10;
+
+								int x is ENTIRELY stored in STACK it does NOT reference an OBJECT in the Heap
+									x actually represents 10, it's not just a reference to SOMETHING ELSE that represents 10. 
+
+									this is why you can do == to different DATA TYPES  but not to REFERENCE TYPES. data types actually represent data, while reference types only represent an address to the heap
+
+							boolean x = true;
+								boolean x is also entirely stored in the stack and does not reference to any other objects in the heap
+
+		Method
+			in Java these bahaviors/ actions are called methods
+
+	Questions
+
+	CLASS
+		what is a class
+
+			AN OBJECT ACTUALLY EXISTS IN YOUR CODE, A CLASS IS JUST A TEMPLATE TO WHERE YOU COULD REFERENCE TO CREATE AN OBJECT
+				example:
+					cookie vs cookie cutter
+
+			a blueprint/ template to create an object
+				each object is created out of the corresponding class
+
+		String
+			almost every programing languages use strings
+
+			STRING OBJECTS ARE IMMUTABLE
+			 	String objects are not able to be changed like primitive types are. 
+			 		when you use an opperator on a string to "change it" what is actually happening is that java is creating a NEW OBJECT with the string value you've "changed"
+
+			 			example String s1 = "hello"
+			 						s1 = s1.toUpperCase();
+
+			 						String "hello" has not been modified but RECREATED as "HELLO" in the heap and now variable "s1" points to the new String "HELLO"
+
+			 						finally, String "hello" now has no variable pointing to it and is now "floating" in memory. Java has a garbage collection feature that will find and eliminate such useless pieces of data
+
+			a special class in java to create and manipulate strings.
+				String s = "Hello World";
+					String Literal : created using quotations directly
+				String s = new String("Hello World");
+					Using  ^^"new" keyword
+
+
+

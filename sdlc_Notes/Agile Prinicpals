@@ -1,0 +1,74 @@
+Agile Principles:
+
+	1.) Deliver Value Faster
+
+		Our highest priority is to satisfy the customer through early and continuous delivery of valuable software
+
+		waterfall delivers it's value at the end of the project while Agile is designed to produce early and ongoing value to the customer.
+
+	2.) Welcome Change
+
+		Welcome changing requirements, even late in development. Agile process harness change for the customer's competitive advantage.
+
+		customer's needs change and evolve over time, it's important that a software development team be ready to move with that change as it happens and not be bogged down by the plan or by the process.
+
+	3.) Deliver Working Software Frequently
+
+		Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
+
+		The key to this principal is "working software", you want to make sure you can present to the customer an incremental but working product with each cycle. You want your time scale to be on the shorter end so that your customer is regularly receiving a working updated software throughout the entire development process.
+
+	4.) Work Together Daily
+
+		Business people and developers must work together daily throughout the project.
+
+		As opposed to traditional waterfall development, the non-development team (business owner, business analyst, or client) and the software developers must be in close communication on a regular basis to make sure that the project is proceeding according to the client's vision and to keep the developers and management well informed of each others difficulties and triumphs.
+
+	5.) Build Projects Around Motivated Individuals
+
+		Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.
+
+		The idea of Agile is to always use a team of motivated individuals that do not require hand holding and can stand on their own while also giving them plenty of space to do their work and solve problems.
+
+	6.) Face-to-Face Conversations
+
+		The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
+
+		direct conversation is the best way to convey meaning and intent for every member of the team, that means regular meetings 
+		(fuck.) within the team and fewer emails (yay?).
+
+	7.) Working Software is Key
+
+		Working software is the primary measure of progress.
+
+		Milestones in the project are measured in working versions of the software NOT business analysis or specific breakthroughs. "How many working pieces of software have your team output yet?" - this is the most important question.		
+
+	8.) Sustainable Development
+
+		Agile process promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
+
+		Instead of avalanches of work falling onto each of the teams, Agile seeks to promote a sustainable and constant flow of tasks for all of the software development teams, from the business analyst to the tester. The key is a constant trickle not a brief flood.
+
+	9.) Attention to Technical Excellence
+
+		Continuous attention to the technical excellence and good design enhances agility.
+
+		Essentially, you must have a solid foundation on which to be agile. If your working software is not robust and well designed problems will compound as you attempt to build on top of the original release, these problems getting even worse if you have to improvise or change directions in your projects direction.
+
+	10.) Simplicity 
+
+		Simplicity - the art of maximizing the amount of work not done is essential.
+
+		Don't do more than you need to! Don't build something just to build it, it's important that every feature and attribute added to your project be distilled and simplistic to its basic function. Less is more.
+
+	11.) Self-Organizing Teams
+
+		The best architectures, requirements, and designs emerge from self-organized teams.
+
+		Let the team be successful by being flexible. Agile teams need not be strictly one group of people without change, it's important that Agile teams be allowed to freely reorganize themselves based on the needs of the project.
+
+	12.) Reflect and Adjust
+
+		At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
+
+		As Agile progresses in cycles, so too does the ability of the Agile team to self reflect and adjust it's strategies, organization, and resources to effect the best outcome for the project and future projects.

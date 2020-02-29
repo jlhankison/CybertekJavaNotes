@@ -1,0 +1,139 @@
+INTERFACE
+
+	Definition:
+
+			An interface is a reference type in Java. It is similar to class. It is a collection of abstract methods. A class implements an interface, thereby inheriting the abstract methods of the interface.
+
+			Along with abstract methods, an interface may also contain constants, default methods, static methods, and nested types. Method bodies exist only for default methods and static methods.
+
+			Writing an interface is similar to writing a class. But a class describes the attributes and behaviors of an object. And an interface contains behaviors that a class implements.
+
+			Unless the class that implements the interface is abstract, all the methods of the interface need to be defined in the class.
+
+				-An interface is a contract between a class and the outside world
+
+				-It provides a set of abstract methods
+
+				- A class implements an interface
+
+			 	- The class provides the behaviors included in the interface
+
+			 	- An interface can also store constants
+
+	 	USES:
+
+	 		Interface is used to create a "loose coupling" between sub classes that in many ways are dissimilar except for a few shared attributes and behaviors (Like how a bird and Superman both fly, or a worm and an excavator both dig)
+
+	 	KEYWORDS:
+
+	 		interface:
+
+	 			The keyword that allows you to create an interface type SOURCE, interface source is similar to abstract in that you can not create an object from it.
+
+	 				public interface ExampleInterface{
+
+					}
+
+	 		implements:
+
+	 			implements allows you to draw on the qualities of the source interface, very similar to the extends keyword with the major difference that you can implements multiple interfaces.
+
+	 				public class ExampleClass implements ExampleInterface1, ExampleInterface2{
+
+	 				}
+
+			Default Methods:
+
+				Added after Java 8, Default methods provide a default implementation to a method so that you can add new functionality without breaking implemented classes.
+
+					default methods in an interface HAS to have a body. {having curly braces indicate the existence of a body or block of code}
+
+				Interfaces are typically used as templates for potentially hundreds of different sub classes which makes them very hard to modify without breaking all associated subclasses. the default keyword makes it so that a (usually) very basic set of instructions will be automatically inherited to the sub class to prevent the implosion of all your subclasses
+
+			Static Methods:
+
+				Another type of method that can be created in an interface is a static method. Static methods ARE NOT INHERITED TO THE CHILD CLASS!
+				Interface static methods MUST have a body or block.
+
+				Static methods are the same as always, they are a block of code that can be called to perform some sort of utility
+
+					Example:
+
+						public interface Example{
+
+							public static void staticMethod(){
+
+							sout("Example Statement 123");
+							}
+						}
+
+						public class Main {
+
+							main{
+
+								Example.staticMethod();  
+							}
+						}
+						----------------------------------
+
+						Output: 
+
+						Example Statement 123
+
+
+
+		CLASS VS INTERFACE:
+
+			Abstract class:
+
+				Can have everything a normal class can have...
+				+ ABSTRACT METHODS
+				- Direct Object Creation (you can not make an object out of an abstract class)
+
+			Interface type:
+
+				Can have...
+				CONSTANTS (interface is the one instance where you do NOT need to type "public static final" to make a variable or method constant)
+				abstract methods
+
+
+		RULES:
+
+			- An interface can ONLY hold constant variables (public static final dataType VAR_NAME = constantData) HOWEVER YOU DO NOT NEED TO TYPE public static final in the code to get a constant. THIS IS EXCLUSIVE TO INTERFACE! THIS DOES NOT OCCUR ANYWHERE ELSE IN JAVA!
+
+			- Interfaces can NOT contain a constructor.
+
+			- All interface methods 
+
+			- interface types are usually created to link 2 fairly dissimilar classes 
+
+				example: 
+
+					public interface Bounce {
+
+						double GRAVITY = 9.81; <--- No need to make GRAVITY a constant because it was declared within an interface
+
+					}
+
+					public class BasketBall implements Bounce{
+
+						// The implementation of Bounce will import the constant GRAVITY 
+
+					}
+
+					public class Kangaroo implements Bounce{
+
+						// GRAVITY is implemented here too
+
+					}
+
+			- All interface methods and variables must be PUBLIC!
+
+			- Most Classes both extend another class (Object Class) AND implement an interface as well
+
+
+
+	 	Declaring an interface:
+
+	 		An interface is made similarly to a class in that you write it with variables and methods in the field
+

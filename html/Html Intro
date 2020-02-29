@@ -1,0 +1,247 @@
+HTML INTRO:
+
+	Created in 1989;
+
+	Stands for Hypertext Markup Language
+
+	Html is the front end coding language of most websites and online content (Others are CSS and javascript)
+
+	Html consists of the front end of most websites. its the visual portion of the website, what the computer reads to SHOW you facebook, google, amazon etc. the website functions do NOT exist in the 
+
+	Html is the bones of front end design, CSS has to do with stylizing and design, JavaScript mostly has to do with website functions
+
+	NOT HTML (ReactJS, Angular, VueJS, JQuer are all JavaScript frameworks)
+
+	WHY DO WE NEED IT FOR TEST AUTOMATION?
+
+		1. To create locators (like a pointer) on the element. you want your script to read some text, find that element first with the locator and then read the text.
+
+		2. To use Html for automation, we don't need to know everything about it, just basics; tags, attributes, and text... no development.
+
+	Back end VS Front end:
+
+		Back-end stands for "business" logic. Data is processed and delivered in the back end.
+
+			back-end languages include Java, Ruby, Python, C#, JavaScript, php, etc...
+
+		Front end consists of only visually stylized representations of the back end data/ outputs
+
+			front end languages are Html, CSS, and JavaScript
+
+		just like a restaurant has a front and back of house, so does coding. front of the house is for presentation, back of the house is for product.
+
+	Tags:
+
+		Tags are used to mark up the start of an HTML element and they are usually enclosed in angle brackets <> 
+
+			Example:
+
+				<p>
+
+		Most tags must be opened <p> and closed </p> in order to function
+
+		Opening tag:
+
+			starts with left angle bracket and ends with right angle bracket with the element enclosed within
+
+			< p >
+
+		Closing tag:
+
+			starts with left angle bracket, then a forward slash, then the element within, finally enclosed with the right angle bracket.
+
+			< / p >
+
+		Multiple tags:
+
+			when you open multiple tags in an HTML document you MUST close the tags in the reverse order in which they were opened
+
+			example:
+				<html>
+					<head>
+					</head>
+
+					<body>
+						<p>
+						</p>
+					</body>
+				</html>
+
+	Attributes:
+
+		Atributes contain additional pieces of information
+
+		Attribute take the form of an opening tag and additional info is placed inside:
+
+			Example:
+
+				<p id= "myId"> </p>
+
+
+	Basic HTML Structure:
+
+		Head, Title, Meta
+
+		Inside the <head> tag there is one tag that is always included... <title>
+
+		<title> tag is the label that your website will show in the top of the web browser... In chrome it's what shows up on the page tab
+
+		<meta>
+
+			this is where information 
+
+	Creating a basic .html document
+
+		1. create a .html document
+
+		2. Use a good text editor like Sublime, Atom, Notepad++, and Visual Studio Code
+
+	Tag Types:
+
+		<html> Entire html document goes here </html>
+
+			the <html> tag is the the root tag in html. It indicates to the computer that the code begins here.
+
+		<!-- Notes go here -->
+
+		 	this tag indicates that you are writing notes for other developers
+
+		<h1-6>Text Here </h1-6>
+
+			h1, h2, h3 tags are all HEADING tags designed to give your website a BOLD FACED heading. 
+
+			the size of the text is determined by the number following 'h'. 1 is the largest, 6 is the smallest.
+
+		<strong>Text Here</strong>
+
+			strong tag BOLDS the text within
+
+		<label> text here </label>
+
+			labels are use to label items within the web page, they are used because they can be customized 
+
+		<a href="webPageAddressHere"> Hyperlink Title Here </a>
+
+			creates a link to a website
+
+		<br> (no closer for this tag)
+
+			puts a break in <p> paragraph text
+
+		<img src="imageAddressHere.jpg"> (no closer)\
+
+			stands for Image source
+
+			this puts out an image based on the address
+
+			you can link to a web address or a local one
+
+		<img src="failedImageAddress.jpg" ALT="This text will print if the image fails to load"
+
+			alt tag will output text should the img src tagged address fail to load
+
+		width=""
+
+			changes the width of the image to your input (in pixels px)
+
+		height=""
+
+			changes the height of the image to your input (in pixels px)
+
+		px
+
+			px stands for pixels, usually follows the data in "quotes" following height or width tags
+
+		Lists:
+
+			<ol>ListGoesInHere</ol>
+
+				stands for organize list you will put your list items within here and it will numberize them in order and indented
+
+			<ul>List goes in here</ul> 
+
+				stands for unordered list or bullet point list. It contains no numbers 
+
+			<li>text goes here</li>
+
+				stands for list, for each new <li> tag you will have a new list item 
+
+			<dl> definition list goes in here </dl>
+
+		Tables:
+
+			<table>table goes in here</table>
+
+				defines an html table
+
+				<tr>table row goes in here</tr>
+
+					table row
+
+					<th>table header text goes here</th>
+
+						table header
+
+					<td>
+
+						table data
+
+		Forms:
+
+			<form> form goes in here </form>
+
+			used to collect user data. User sign up or subscriptions etc. are all forms.
+
+				some examples of
+
+				<input type="">
+
+						designates the type of input within the form
+
+					"text"
+						defines a one line of text
+
+					"radio"
+
+						gives you a "select one" style set of buttons
+
+					"submit"
+						creates a submit button to send entered data 
+
+				<select> drop down options go here </select>
+
+						select creates a drop down menu 
+
+					<option> drop down option goes here </option>
+
+						option is one of the available selections within the drop down menu
+
+
+		Style:
+
+				Style is a section of your html code dedicated to CSS (Cascading Style Sheets) code, here is where all the design elements of a webpage usually exist
+
+				CSS uses curly braces {} and semicolons ; just like java however the majority of the code is simpler than java
+
+			<style type="text/css"> </style>
+
+				this is the opening code you type to begin a CSS style code block. From here on out, you must type in CSS code
+
+				body{
+					here you enter your CSS code to modify the html body elements
+				}
+
+					background-X: example_here;
+
+							background keyword has lots of different commands that go where x is. Background allows you to change qualities about the background of your website.
+
+						-image: url()
+
+
+
+
+
+
+
+
+

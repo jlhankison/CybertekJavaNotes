@@ -1,0 +1,226 @@
+EXCEPTION HANDLING
+
+	EXCEPTION:
+
+		An exception is an ERROR that happens during Java runtime.
+
+		NOTES: 
+
+			Exception is NOT a compile error (essentially an error when JDK tries to convert the Java language into machine code)
+
+			An Exception is an OBJECT! Just like any other! It can be created, Casted, and manipulated
+
+			The moment you have an error Java will CREATE an exception object
+
+
+		PROGRAM FLOW:
+
+			FileName.java (written code) 
+
+			--> 
+
+			Compiler (if error is detected here, it is a compiler Error) 
+
+			--> 
+
+			ClassName.Class (specific class being ran) 
+
+			--> 
+
+			Run (This is where Run time errors, or exceptions, are encountered )
+
+			The code runs line by line so if there is an exception error anywhere within the code, it will halt the program execution at the error and throw an exception message
+
+		SYNTAX:
+
+			TRY CATCH BLOCK:
+
+				try 
+					try does basically what its name indicates, you will "TRY" to run a piece of code, if it fails, an exception is thrown and the following statements in the block are checked
+
+					Example:
+
+						try{
+							System.out.println(name.charAt(targetIndex)); // <-- if the index is out of bounds, an EXCEPTION OBJECT will be created
+						}
+
+				catch
+
+					catch is a way to overwrite the exception object outputs. if the "try" exception is the same type as the "catch" parameter (the super Exception type will catch ALL exceptions because it is the super class to all exceptions) the program will output whatever code exists in the "catch" body instead of the exception's built in error message.
+
+					Example:
+
+						catch (Exception exceptionName){
+							System.out.println("Something unusual happened!!"); // <-- when this catch is activated, exceptionName is declared as the exception object of the FAILED try, except instead of
+																					// THROWING the exception error, it activates the contents of catch!
+																					// When your parameter in the catch is a super class like "Exception" the actual exception object will be UPCAST to 
+																					// an "Exception" type Object
+						}
+
+				finally
+
+					finally keyword indicates that the code within the body of "finally" will ALWAYS run even if there is a code ending error (even if there is no error at all!)
+
+					Example:
+
+						finally{
+							sout("This code will always run no matter what we have in the try/catch statement")
+						}
+
+			Throw:
+
+				throw is how Java handles errors, THIS IS WHAT HAPPENS EVERY TIME YOU RUN INTO AN ERROR IN JAVA EVERY TIME. This is how you get the red text with all the gibberish involved
+
+				it has one purpose: to throw the exception into the runtime and output the result into the console
+
+				throw exists in front of every exception object created automatically 
+
+					Example A:
+
+						String x = "Blabla";
+
+						try{
+							sout (x.charAt(10));
+
+						}catch (StringIndexOutOfBoundsException e1){
+							throw e1;
+						}
+
+						----RUN----
+
+						Console error message:
+
+							Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: 10  
+								at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+								at java.base/java.lang.String.charAt(String.java:702)
+								at daily_classes.day059.ExceptionTrying.main(ExceptionTrying.java:11) 
+
+					Example B:
+
+						String x = "Blabla";
+
+						System.out.println(x.charAt(10));  <-- at this moment in the program a new object is created with the THROW keyword in front of it (throw new StringIndexOutOfBoundsException())
+
+						----RUN----
+
+						Console error message:  // As you can see, it's the exact same output as Example A above, this is what is happening behind the scenes!
+
+							Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: 10  
+								at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+								at java.base/java.lang.String.charAt(String.java:702)
+								at daily_classes.day059.ExceptionTrying.main(ExceptionTrying.java:11)
+
+			Throw(s):
+
+				the throws (emphasis on the 's') keyword is used at the end of the main method (similar to the way extends is used when declaring a Class). The throws keyword prepares the compiler to handle checked
+					excemptions. if you do not put the throws keyword in AND you do not handle the checked exception, the compiler will fail to compile the code.
+
+			TERMS:
+
+				EXCEPTION:
+
+					Runtime Error
+
+				COMPILE ERROR:
+
+					Error during compiling process (Syntax grammatical error)
+
+				THROW:
+
+					Term when a program outputs an error and halts the program from running
+
+		EXCEPTION HIERARCHY:
+
+			Throwable();
+
+					The grand daddy of all error types in Java
+
+					THE super class of all Exceptions and Errors
+
+					Throwables include all exceptions and errors. 
+
+					If you see any kind of red text in your code (that you weren't expecting) it's a Throwable
+
+				Exception();
+
+					RuntimeException();
+
+						Null
+
+		CHECKED VS UNCHECKED EXCEPTIONS:
+
+			Unchecked Exceptions:
+
+				any RuntimeException is an unchecked exception meaning that it is NOT required that you "handle" the exception at cmpile time
+
+					Example A:
+
+						throw new RuntimeException();
+
+			Checked Exception:
+
+				A checked exception type is one that MUST be handled at compile time CHECKED EXCEPTIONS WILL NOT COMPILE ON THEIR OWN! they must be handled or declared(by try catch block for example)
+
+				ANY EXCEPTION that is NOT a RuntimeException is a Checked exception
+
+					Example A:
+						// uncompilable throwing of a checked exception
+
+						public static void main(String[] args) {
+
+							throw new IOException(); // <-- IOException is a checked exception IT WILL NOT COMPILE THIS WAY THE COMPILER WILL COMPLAIN
+						}
+
+					Example B: 
+						// Example of handling a checked exception with a try catch block
+
+						public static void main(String[] args) {
+							try{
+					            throw new IOException();
+
+					        } catch (Exception e){
+
+					            System.out.println("This attempted IOException has been caught and dealt with");
+					        }
+				        }
+
+			        Example C:
+			        	// Example of Declaring a checked exception with the throws keyword
+
+			        	public static void main(String[] args) throws IOException { // <-- This is where the throws keyword exists, it prepares the compiler to handle the checked exception 
+
+					        throw new IOException();
+
+		HANDLING EXCEPTIONS:
+
+			Try catch code block
+
+			Declare the error
+
+
+		EXCEPTION CLASSES:
+
+			For each Exception type in Java, there is a Class. Whenever a runtime error occurs, an object is created from a matching class.
+
+				Example:
+
+					If your code is reading from an invalid index, then an object from ArrayIndexOutOfBoundsException class is Created then THROWN
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+	COMPILER ERROR:
+
+		NOT AN EXCEPTION!!
+
+		Compiler errors occur when there are errors in your written java code that inhibit the compiler converting it into byte code
+
+		CAUSES:
+
+			SYNTAX
+				missing semi colons, misspelled commands etc.
+
+			INCORRECT DATA TYPE MATCHING
+
+				int x = "Java" is an incorrect data type
+
