@@ -1,1 +1,11 @@
 Selenium Webdriver intro
+
+	to use Selenium webdriver we need 3 things
+
+		1.) selenium library added into your java project
+
+		2.) the webdriver (browser driver) for your specific browser
+
+		3.) the browser itself
+	
+	

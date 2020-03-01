@@ -1,0 +1,137 @@
+Maven intro
+
+	Maven is a build automation tool
+
+		maven is a command line tool. mvn is the main Maven command
+
+		build tools automate the process of creating, managing dependencies, compiling, testing, deploying java applications.
+
+	Maven Rules:
+
+		1.) When creating a Maven project you must add the "target" folder to the .gitignore file because the items in this file are all based on previous builds which can create conflicts.
+
+	Maven Keywords:
+
+		Project home folder
+
+		Local repository
+
+		Central Repository: MVNrepository.come, maven.org
+
+		Dependency 
+
+		Archetype
+
+	Maven Archetypes:
+
+		Default layout:
+
+			src package
+				main package
+					java package
+
+					resources package
+
+				test package
+					java package
+
+
+	POM
+
+		Project Object Model
+
+		The fundamental unit of work in maven
+
+		an xml file always located on home folder of the project
+
+		always called pom.xml
+
+		contains information about the project and configuration details used to build the project
+
+		contains default values for most projects
+
+	Maven Life-cycles
+
+		Maven automates the build process of java projects. each phase in the build process is known as a maven life-cycle or a maven goal
+
+			each life-cycle manages a certain part of the build process.
+
+			Maven life-cycles follow each other.
+
+			A Maven life-cycle is a maven command: mvn verify, mvn test
+
+			when certain Maven life-cycles are given as a maven command, all life-cycles that came before are executed
+
+		Maven Life-Cycles options:
+
+			Clean:
+
+				Deletes all Maven temporary files from your project
+
+			Validate:
+
+			Compile:
+
+			Test:
+
+			Package:
+
+			Verify:
+
+			Install:
+
+			Site:
+
+			Deploy:
+
+
+
+	reasons to use maven
+
+		1.) dependencies 
+
+			whenever you want to add some library to your java/maven project, you just need to add dependency. it's like instructions for maven that specifies library name and it's version. then maven will automatically download that library. First library that we are going to add is Selenium
+
+			Every project has pom.xml file. this file is a the main file in every maven project. it has information about project, developers, dependencies and other useful info.
+
+			POM:
+				means Project Object Model. this document is written on XML. Language, that is similar to HTML, Also has tags and attributes...
+
+	Maven can be installed as CLI tool, but Intellij also has it by default.
+
+	Creating a Maven Project:
+
+		1.) in IntelliJ, select new project under file
+
+		2.) in the project creation screen select Maven type
+
+		3.) proceed with project creation.
+
+		4.) SELECT "ENABLE AUTO-IMPORT" in the popup in the bottom right corner. this is important
+
+			if you dont hit this button you can go to the maven settings under settings where you need to select importing then select the check box "import maven projects automatically"
+
+	importing Selenium into Maven Project
+
+		1.) after you have created a new maven project open the pom.xml file from within the primary project package
+
+		2.) in the pom.xml file place a <dependencies></dependencies> tag below the <version> tag
+
+		3.) Next you need to find you selenium maven repository at https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+
+		4.) Select the newest STABLE (not alpha) Selenium java version (3.141.59) at the time of this notation
+
+		5.) Copy the Maven code from the maven tab in the page
+
+			<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+				<dependency>
+				    <groupId>org.seleniumhq.selenium</groupId>
+				    <artifactId>selenium-java</artifactId>
+				    <version>3.141.59</version>
+				</dependency>
+
+			at the time of this notation
+
+		6.) paste the code into the <dependencies></dependencies> tag you created in your pom.xml file earlier
+
+		7.) if your "auto import" feature was properly applied your 

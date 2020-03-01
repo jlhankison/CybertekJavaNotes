@@ -1,1 +1,52 @@
 Selenium Intro
+
+	What is Selenium:
+
+		Selenium is a free (open source) automated testing suite for web applications across different browsers and platforms. Selenium focuses on automation web-based apps.
+		we use browsers like Chrome
+
+		Selenium is not just one tool it is made up of 4 smaller tools each catering to different testing needs of an organization.
+
+		Selenium tools:
+
+			Selenium IDE 
+
+				Is an integrated development environment for Selenium Scripts. Basically its a firefox extention and allows you to record, edit, and debug tests.
+
+				officially deprecated 
+
+			Selenium RC (remote control)
+
+				is a server written in java that accepts commands for the browser via HTTP
+
+				allows you to write automated tests in muliple programing languages against http website 
+
+				officially deprecated in favor of selenium web driver
+
+			Selenium WebDriver
+
+				better than both ide and rc its more modern and stable in automating the browsers actions. unlike rc does not rely on javascript for automation it controls the browser by directly communicating with it.
+
+					platforms supported:
+
+						windows
+						mac
+						linux
+
+					Languages supported
+
+						Java 
+						C#
+						Ruby
+						Python
+
+					Browsers supported
+
+						internet explorer
+						Firefox
+						Chrome
+						Safari
+
+			Selenium Grid
+
+				this is what we will use, at the end of the selenium course to connect several servers for better performance in parallel test execution for cross browsing testing
