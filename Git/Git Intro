@@ -119,7 +119,7 @@ Git Introduction:
 
 				3.) type git add . (the period is important)
 
-			commiting:
+			committing:
 
 				1.) git commit -m "commit message here"
 
