@@ -1,2 +1,30 @@
 Pop Ups
 
+	Alerts:
+
+		Web developers use JavaScript alerts to inform users about validation errors, warnings, getting 
+
+		Interacting with Alerts:
+
+			the way you interact with alerts is via the driver
+
+			driver.switchTo().alert()...
+
+				This queues up your ability to navigate the alert
+
+			.alert().accept();
+
+				this will select the accepting button in the alert
+
+			.alert().dismiss();
+
+				this will attempt to dismiss the alert (via selecting a "cancel" or "no" etc. type button)
+
+			.alert.sendKeys();
+
+				will send a char string to the alert which will be input if the alert has a text box for typing;
+
+			.alert.getText();
+
+				outputs a string of the text in the alert.
+

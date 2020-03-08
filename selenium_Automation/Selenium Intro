@@ -7,6 +7,20 @@ Selenium Intro
 
 		Selenium is not just one tool it is made up of 4 smaller tools each catering to different testing needs of an organization.
 
+	Pros & Cons:
+
+		Pros:
+
+			Free (open source)
+
+		Cons:
+
+			Synchronization
+
+				if selenium cannot find element, it gives you an exception right away. we can handle it, but sometimes it becomes a problem
+
+					// idk what this means yet... 3/1/20
+
 		Selenium tools:
 
 			Selenium IDE 

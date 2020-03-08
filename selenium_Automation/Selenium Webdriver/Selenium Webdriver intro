@@ -1,11 +1,227 @@
 Selenium Webdriver intro
 
-	to use Selenium webdriver we need 3 things
 
-		1.) selenium library added into your java project
+	Terms:
+
+		Selenium Web Driver:
+
+			This is used develop test automation scripts for webs based application.
+
+		Web based application:
+
+			a type of application that is used in a browser.
+
+	to use Selenium Webdriver we need 3 things
+
+		1.) selenium library added into your Java project
 
 		2.) the webdriver (browser driver) for your specific browser
 
 		3.) the browser itself
+
+	Creating Webdriver in Java:
+
+		In order to create a webdriver you must begin by setting up the browser corresponding driver.
+
+			1.) WebDriverManager.yourBrowserDriverHere().setup();
+
+				this sets up WebDriverManager to your browser type
+
+			2.) YourBrowserDriver exampleName = new YourBrowserDriver();
+
+				fill the specific browser driver you're using into the "YourBrowser" place. IE ChromeDriver
+
+				all of the browser drivers are implementations of WebDriver interface then RemoteDriver Class
+
+					IE.
+						WebDriver
+
+							RemoteDriver
+
+								ChromeDriver
+
+								OperaDriver
+
+			3.) Now you can perform basic web navigation with your exampleName object!
+
+	Rules:
+
+		To check if an HTML attribute is UNIQUE:
+
+			such as id, name, class, etc...
+
+			just put attribute=value pair into square brackets []
+
+				[name='password']
+
+		to check if a TAG NAME is unique:
+
+			search for //tagNameHere
+
+			If the search shows 1 of 1 results, the locater is unique
+
+	Locators:
+
+		Selenium uses what are called locators to find and match the elements of your page that it needs to interact with. locator is a command that tells selenium which elements (say text box, buttons, check boxes etc) its needed to operate on.
+
+		Locater strategies:
+
+			ID: <h3 id="smth"></h3>
+
+				-Best Locater. Always unique
+
+			Class name: 
+
+				-Not a good locater, because it's almost never unique
+
+			Tag Name:
+
+				-not a good locater, because almost always not unique
+
+				tag name is generally the first word in a html bracket.
+
+
+					example: 
+
+						<div class> tag name is "div"
+
+
+
+			Name: <h3 name="smth"></h3>
+
+				-good locater. not always unique but often
+
+				find the input element with the matching name attribute
+
+				example:
+
+					in the google homepage, the search bar element has a name attribute called "q" so...
+
+						WebElement q = driver.getElement(By.name("q"));
+
+						will make WebElement q = the google searchbar
+
+			Link Text:
+
+				-ok locater, sometimes unique
+
+				link text is NOT the hyper link it represents it is the VISIBLE text that the hyperlink is labeled with
+
+					<a href="http://google.com"> Link Text Here!! </a>
+
+			Partial Link Text:
+
+				-same as link text, sometimes unique
+
+				same as Link Text but like the .contains method
+
+
+
+			XPath
+
+			cssSelector
+
+	WebElement:
+
+		WebElement is an interface in Selenium that allows you to wrap up any kind of Html element on a web page into an object with various methods used to control that Html Tag element 
+
+		How to wrap your HTML Element into a WebElement based object
+
+			1. create a web driver with the WebDriverManager and then the OperatingSystemDriver of your choice (named "driver" in this case)
+
+			2. driver.get(webpagehere.com); to open a Html page
+
+			3. create a WebElement object with the driver.findElement(
+
+	Exceptions:
+
+		StaleElementReferencException
+
+			means that selenium cannot find previously located element. it happens when you are trying to interact with element after the page has already refreshed or navigated
+
+		NoSuchSessionException
+
+			means that there is no active running browser window open to navigate, access webelements and to otherwise perform actions upon.
+
+	Navigation Methods:
+
+		exampleName.get("http://websiteAddressHere.com")
+
+			This will open the designated web page
+
+		.getTitle();
+
+			returns the <title> </title> html text 
+
+		.getWindowHandle();
+
+			returns the window handle (id of the current window) as a string
+
+		.getWindowHandles();
+
+			returns all the window handles opened by the driver as a Set<String>
+
+		.getCurrentURL();
+
+			gets URL of the page that is currently opened
+
+		exampleName.manage().window().maximize();
+
+			this will maximize the window you have opened
+
+		.navigate.to("websiteAddressHere.com");
+
+			navigates the currently opened browser window to the given address
+
+		.navigate.back();
+
+			navigates back one webpage in browser history
+
+		.navigate.forward();
+
+			navigates forward one webpage in browser history
+
+		.navigate.refresh();
+
+			refreshes the current webpage
+
+		.switchTo().window("windowHandleHere");
+
+			switches the active window to the window id given
+
+		.close();
+
+			closes the CURRENTLY ACTIVE tab (window) does not close the whole browser unless this is the last tab in the browser
+
+		.quit();
+
+			closes the entire browser and all the open tabs in it.
+
+		.getAttribute("attribute");
+
+			returns attribute value
+
+				example:
+
+					<a class="button secondary radius" href="/logout"><i class="icon-2x icon-signout"> Logout</i></a>
+
+					.getAttribute("a");
+
+						= Logout
+
+					"class"
+
+						= button secondary radius
+
+					"href" 
+
+						= /logout (this means that you change the last forward slash text to logout...)
+							ie "http://practice.cybertekschool.com/logout"
+
+
+
+
+
+
 	
 	

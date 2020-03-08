@@ -1,1 +1,70 @@
-WebElement
+WebElement:
+
+	Radio buttons
+
+		Radio buttons are a html type="radio" element
+
+		Radio buttons associate with each other based on their NAME, so multiple radio buttons with the same name will only allow ONE button to be pushed at a time
+
+		with radio buttons you can not call the .getText(); method, It will not output anything, Use getAttribute("attribute here"); method to display values
+
+	Testing WebElements:
+
+		The testing priority for webElements;
+
+			1.) element must be present
+
+			2.) element must be visible
+
+			3.) element must be enabled
+
+	Frame:
+
+		used to insert one html document on another one. there are two types of frames: Frame and Iframe
+
+		<frame>
+
+			used to divide page in sectors
+
+		<iframe> 
+
+			used to insert one page inside another one, anywhere.
+
+		to be able to interact with the content inside a frame, you need to swich to it:
+
+			Frame Methods:
+
+				driver.switchTo().frame("nameOrID");  
+
+					switch by id or name of the frame
+
+					usually all frames have an id or name
+
+				driver.switchTo().frame(index); 
+
+					switch by index starting at 0
+
+				driver.switchTo().frame(WebElement);
+
+					if frame doesn't have a name or id. and the index doesnt give accurate frame position, use WebElement.
+
+
+				driver.switchTo().defaultContent();
+
+					to exit from the frame. if you don't exit, selenium will not see the content outside of this frame.
+
+	Select:
+
+		Select is reserved for dropdown menus 
+
+		Declaring Select:
+
+			You must declare a Select object with your driver to navigate the dropdown menu
+
+			1.) First you may Declare a WebElement object by using a locater to find the dropdown menu (you can do this any way you would locate any other WebElement)
+
+				Example:
+
+					WebElement example = driver.findElement(By.id("dropdown"));
+
+			2.) Next you need to declare your Select 

@@ -2,17 +2,25 @@ Xpath Locaters
 
 	What is Xpath
 
-		xpath is defined as xml path. it is a syntax or language for finding any element on the web page using xml path expression. xpath is used to find the location of any element on a webpage using HTML Dom structure
+		Xpath is defined as xml path. it is a syntax or language for finding any element on the web page using xml path expression. Xpath is used to find the location of any element on a webpage using HTML Dom structure
 
 		cliff notes:
 
-			xpath stands for xml path language
+			1.) Xpath stands for xml path language
 
-			path uses "path like" syntax to identify and navigate nodes in an xml document
+			2.) Xpath uses "path like" syntax to identify and navigate nodes in an xml document
 
-			xpath contains over 200 built in functions
+			3.) Xpath contains over 200 built in functions
 
-			xpath is a major
+			4.) XPath is a major element in the XSLT standard
+
+			5.) XPath is a W3C recommendation 
+
+		RULES:
+
+				Index:
+
+					Xpath indexes are not like Java indexes, 1 is the first index, not 0.
 
 		Types of Xpath:
 
@@ -33,6 +41,82 @@ Xpath Locaters
 					/html/body/div/div[2]/div/div/button[2]
 
 			Relative Xpath
+
+				ForRelative XPath,the path starts from the middle of the HTML DOM structure. It begins with the double forward slash (//), which means it can search for elements anywhere within the webpage.
+
+				Anatomy:
+
+					Example Relative Xpath:
+
+						//tagName[@attribute=‘value']
+
+					//
+						beginning of element
+
+					tagName
+						tag name of element
+
+					@
+						indicates that you will be selecting an attribute
+
+					Attribute
+						Attribute name of the element
+
+					Value
+						Value of attribute 
+
+				Finding element:
+
+					By Attribute:
+
+						Template example:
+
+							//tagNameHere[@attributeHere='attributeValueHere']
+
+						Real examples:
+
+							//button[@onClick='button1()']
+
+					By Text:
+
+						Template Example:
+
+							//tagNameHere[text()='some text here']
+
+						Real example:
+
+							//button[text()='Click for JS Prompt']
+
+					Without Tag:
+
+						basically, just use * where the tag would normally be
+
+						Examples:
+
+
+							//*[@attributeHere='attributeValueHere'] 
+
+							//*[text()='some text here']
+
+					starts with:
+
+						used to find an element based on the START of an attribute or text
+
+						example:
+
+							//tag[starts-with(@attribute,'button_')]
+
+							//tag[starts-with(text,'text goes he')]
+
+					Contains:
+
+						used to find element that partially contains the attribute value or text value
+
+						Example:
+
+							//tag[contains(@attribute,'value')]
+
+							//tag[contains(text, 'goes')]
 
 				Example:
 

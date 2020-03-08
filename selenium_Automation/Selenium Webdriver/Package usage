@@ -1,1 +1,9 @@
-Package usage
+Package usage:
+
+	Tests Package:
+
+		THis is where we will store all our tests
+
+	Utilities package:
+
+		this is where we keep all our static classes for calling useful methods without creating objects
