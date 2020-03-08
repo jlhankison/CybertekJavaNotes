@@ -1,0 +1,39 @@
+Xpath Locaters
+
+	What is Xpath
+
+		xpath is defined as xml path. it is a syntax or language for finding any element on the web page using xml path expression. xpath is used to find the location of any element on a webpage using HTML Dom structure
+
+		cliff notes:
+
+			xpath stands for xml path language
+
+			path uses "path like" syntax to identify and navigate nodes in an xml document
+
+			xpath contains over 200 built in functions
+
+			xpath is a major
+
+		Types of Xpath:
+
+			Absolute Xpath (AKA full Xpath)
+
+				never used in automation because it's not reliable 
+
+				Absolute Xpath always starts with the root element, in the case of an Html document it would be /html
+
+				Absolute Xpath ALWAYS starts with a single forward slash
+
+				to get the Absolute Xpath you must give the address of the element from the top all the way to the bottom 
+
+				square brackets [] are used to indicate which tag you are referring to when there are more than one example of a tag. THIS IS NOT IN INDEX FORMAT 1 IS THE FIRST, 2 IS THE SECOND AND SO ON...
+
+				Example:
+
+					/html/body/div/div[2]/div/div/button[2]
+
+			Relative Xpath
+
+				Example:
+
+					//input[@id='btn']
