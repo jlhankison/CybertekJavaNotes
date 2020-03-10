@@ -13,3 +13,46 @@ SDLC interview questions:
 		I am also responsible for maintaining and and automating test scenarios for the regression test suite and make sure that it's tested with all the possible scenarios.
 
 		as a cross functional team member, I
+
+
+3. Upstream vs Downstream:
+
+	-Upstream
+
+		Upstream is the source of your projects code, places like GitHub.com, your workplace's server, or the lead dev's computer
+
+	-Downstream:
+
+		Downstream is your local files / local code within your laptop or desktop
+
+
+4. Tell me about your project:
+
+	- Tell them you signed an NDA which prevents you from talking abut your project in detail
+
+	- give them some basic outlines of the modules you worked on (login function, )
+
+
+5. Tell me about your daily activities
+
+	- First thing in the morning I will check my emails, calendar, and slack messages
+
+	- We will have a daily stand up meeting in the morning usually about 30 minutes long
+
+	- Depending what point in the Sprint we are in, there may be a sprint planning meeting
+
+	- My automated smoke test will run in the morning and I'll check the emailed report.
+
+	- 
+
+6. Tell me about your responsibilities
+
+	- As a tester my main responsibilities are testing the application from end to end to make sure we have a bug free scenario
+
+	- I design test cases for my project
+
+	- I perform manual testing on the application according to the test cases
+
+	- After manual testing has been completed we begin our automation by designing our automation framework
+
+	- I build automated frameworks for Smoke, regression, Unit, Integration testing
