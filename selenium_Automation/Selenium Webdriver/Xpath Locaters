@@ -65,6 +65,10 @@ Xpath Locaters
 					Value
 						Value of attribute 
 
+				Navigating Back:
+
+					In Xpath you can navigate to the tag ABOVE the tag you 
+
 				Finding element:
 
 					By Attribute:
@@ -98,25 +102,120 @@ Xpath Locaters
 
 							//*[text()='some text here']
 
-					starts with:
+					Xpath modifiers:
 
-						used to find an element based on the START of an attribute or text
+						These keywords help you locate your element in specific ways.
 
-						example:
+							starts with:
 
-							//tag[starts-with(@attribute,'button_')]
+								used to find an element based on the START of an attribute or text
 
-							//tag[starts-with(text,'text goes he')]
+								example:
 
-					Contains:
+									//tag[starts-with(@attribute,'button_')]
 
-						used to find element that partially contains the attribute value or text value
+									//tag[starts-with(text,'text goes he')]
 
-						Example:
+							Contains:
 
-							//tag[contains(@attribute,'value')]
+								used to find element that partially contains the attribute value or text value
 
-							//tag[contains(text, 'goes')]
+								Example:
+
+									//tag[contains(@attribute,'value')]
+
+									//tag[contains(text, 'goes')]
+
+							And:
+
+								If you want the element you're locating to have ALL of the attributes or text in your Xpath
+
+									Example:
+
+										//button[@type='submit' and @id='wooden_spoon']
+
+							Or:
+
+								If you want the element you're locating to have ONE of the attributes or text in your Xpath
+
+									Example:
+
+										//button[@type='submit' or @id='wooden_spoon']
+
+
+					Parents and Siblings:
+
+						Parents:
+
+							Parents in Html and xml are defined as the tags that CONTAIN the child tag
+
+								Example:
+
+									<parent>
+										<child>
+										</child>
+									</parent>
+
+							To access the Parent element of your Xpath element you need to follow your Xpath text with double forward slashes (//) followed by additional defining text.
+
+								Example:
+
+									//label[text()='Username']//parent::tagHere
+
+							Parent Commands:
+
+								//parent::tagHere
+
+									The Parent command following an Xpath indicates to the code that you will be looking to the Element(s) above the Xpath element. You can go up as many levels as you would like.
+
+										Example:
+
+											Parent:
+
+												//label[text()='Username']//parent::tagHere
+
+											"grandParent" (parent of parent):
+
+												//label[text()='Username']//parent::tagOneHere//parent::tagTwoHere
+
+
+
+						Siblings:
+
+							Siblings in Html and xml are defined as more than one element that are contained within the same element.
+
+								Example:
+
+									<parent>
+										<sibling_1>
+										</sibling_1>
+
+										<sibling_2>
+										</sibling_2>
+									</parent>
+
+							To access the Sibling element of your Xpath element you need to follow your Xpath text with a single forward slash (/) followed by additional defining text.
+
+								Example:
+
+									//label[text()='First name']/following-sibling::div
+
+							Sibling Commands:
+
+
+								/following-sibling::tagHere
+
+									gets the tag sibling that is located under the Xpath location
+
+									Example:
+
+										//label[text()='First name']/following-sibling::div
+
+								/preceding-sibling::tagHere
+
+									gets the tag sibling located ABOVE the Xpath location
+
+
 
 				Example:
 

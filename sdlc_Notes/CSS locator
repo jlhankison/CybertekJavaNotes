@@ -1,0 +1,71 @@
+CSS Locater:
+
+	What is CSS:
+
+		Css stands for Cascading Style Sheets. It is a language that describes the style of an HTML document and how the elements should be displayed. This locater style, as the name suggests, uses the CSS code to locate an Html element
+
+	CSS VS Xpath:
+
+		CSS locater looks very similar to the Xpath locater.  
+
+			CSS locater:
+
+				button[name='button2']
+
+			Xpath locater:
+
+				//button[@name='button2']
+
+	Why Use CSS over Xpath
+
+		Why?
+
+			1.) CSS is much faster than Xpath
+
+			2.) CSS is more simple text, less verbiage
+
+		Why not?
+
+			1.) You can NOT locate an element by Text with CSS
+
+
+
+
+
+	Finding Elements:
+
+		By attribute:
+
+			tagName[attributeHere='value_Here']
+
+		Contains:
+
+			to use starts with you need to use the pound/star symbol (*)
+
+			tagName[attributeHere*='alue_Her']
+
+
+		Starts With:
+
+			to use starts with you need to use the caret symbol (^)
+
+			tagName[attributeHere^='value_']
+
+		Ends With:
+
+			to use ends with you need to use the dollar symbol ($)
+
+			tagName[attribute$='_Here']
+
+		:nth-of-type(n)
+
+			If you are trying to locate an Element that shares the same tag and element(s) with other elements. Where n is, is the index (index in CSS starts with 1)
+
+				Example:
+
+					button[class="btn btn-primary"];nth-of-type(2)
+
+					this will find the 2nd example of <button class="btn btn-primary"> element
+
+
+
