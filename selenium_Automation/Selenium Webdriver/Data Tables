@@ -1,0 +1,52 @@
+Data Tables
+
+	What are data tables?
+
+		Data tables are information organized into columns and rows
+
+	HTML Tags:
+
+		<table> ... </table>
+
+			This is how you start a Table in Html
+
+		<thead> ...</thead>
+
+			this is the first row of the table which holds the labels of each of the columns
+
+			<th> ... </th>
+
+				Same as <td> except that it gives the table header instead of data
+
+		<tbody> ... </tbody>
+
+			this is where the body of the table is, ie all the data the table represents exists
+
+		<tr> ... </tr>
+
+			"Table Row" this indicates that this is a row of data within the <tbody>
+
+		<td> ... </td>
+
+			"Table Data" this is the final level of the table, the individual cell that holds the data
+
+		Example:
+
+			<table>
+				<thead>
+					<tr>
+						<th> A1 Header </th>
+						<th> B1 Header </th>
+						<th> C1 Header </th>
+				<tbody>
+					<tr>
+						<td> A2 Data </td>
+						<td> B2 Data </td>
+						<td> C2 Data </td>
+					</tr>
+
+					<tr>
+						<td> A3 Data </td>
+						<td> B3 Data </td>
+						<td> C3 Data </td>
+					</tr>

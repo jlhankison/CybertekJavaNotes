@@ -1,0 +1,99 @@
+TestNG
+
+	What is TestNG:
+
+		TestNG is a testing framework.
+
+		it is a Centralized controller
+
+		allows for batch execution or optional execution
+
+	Adding TestNG to Java (maven) Project:
+
+		To add TestNG to our Java Maven project we have to add the TestNG dependency to the pom.xml file
+
+		1.) navigate to https://mvnrepository.com/ 
+
+			you can find all your maven dependencies here.
+
+		2.) search for TestNG in the search bar
+
+		3.) select a slightly older version of TestNG from the version list on the TestNG site
+
+			in my case I'm using 6.14
+
+		4.) 
+
+	Assertions:
+
+		Hard Assertion:
+
+			If a hard assertion fails, the test execution stops due to a thrown exception
+
+				uses class Assert 
+
+		Soft Assertion:
+
+			test execution doesn't stop but continues to the conclusion 
+
+				uses class SoftAssert
+
+	Keywords:
+
+		@Test 
+
+			This Annotation is used to create a TestNG test. Place it directly above a method to invoke TestNG 
+
+		@Test(description = "Description here")
+
+			You can add a description to your test annotation to designate what this particular test is designed to do
+
+		@BeforeMethod
+
+			This annotation makes the associated method performs BEFORE EVERY METHOD in your test class. For example if you had the @BeforeMethod method print out "Before" and you had 3 @Test methods in your class, "Before" would print 3 times in the console
+
+		@AfterMethod
+
+			This annotation makes the associated method performs AFTER EVERY METHOD in your test class. For example if you had the @AfterMethod method print out "After" and you had 3 @Test methods in your class, "After" would print 3 times in the console
+
+	Annotation Hierarchy:
+
+		Annotation is used to create and organize tests within the TestNG test suite
+
+		@BeforeSuite
+
+			@BeforeTest
+
+				@BeforeClass
+
+					@BeforeMethod
+
+						@Test
+
+					@AfterMethod
+
+				@AfterMethod
+
+			@AfterTest
+
+		@AfterSuite
+
+
+	Classes:
+
+		Assert:
+
+			Import from org.testNG NOT from javac.util
+
+			Assert is a class that's used to determine whether two values are equal to each other or not and 
+
+			Methods:
+
+				.assertEquals(value1, value2):
+
+					Checks whether value 1 and 2 are equal. You can put almost any value within the assertEquals method
+
+					When the test passes, nothing is displayed but the number of test cases made
+
+					When the test FAILS the @Test method will throw a java.lang.AssertionError: exception that will 
+

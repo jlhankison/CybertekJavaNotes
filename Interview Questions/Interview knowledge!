@@ -1,0 +1,16 @@
+Interview knowledge!
+
+Java is a pass by value language <-- remember this phrase
+
+	when you pass a variable to another variable (x = y) the value is being passed
+
+How do you make a "constant" in Java?
+
+	there is no designated "constant" in Java so you make a -->> public static final variableType variableName = permanentValue;
+
+What is the difference between Overloading and Overriding a method?
+
+	Overloading a method gives you the option to call a method while inputting different arguments into the method. 
+	Overriding replaces the exact parameters of the method in a sub class. toString() is a great example.
+
+since Java 8 was developed, Interface can have more than just abstract methods ( default )

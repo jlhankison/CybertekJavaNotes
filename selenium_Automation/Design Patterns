@@ -1,0 +1,15 @@
+Design Patterns
+
+	Usage of Design pattern
+
+		Design patterns have two main usages in software development
+
+		Common platform for developers:
+
+			Provides a standard terminology and are specific to particular scenarios
+
+				Singletons should follow a design pattern so that all developers familiar with singletons should be able to recognize and understand what is happening in the code
+
+		Best Practices
+
+			Patterns have been evolving over a long time and SHOULD provide the best solutions to certain problems faced during software development. These patterns help people with less experience design their software easier and more efficiently 

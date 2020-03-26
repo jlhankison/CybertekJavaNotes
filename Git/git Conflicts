@@ -1,0 +1,66 @@
+git Conflicts
+
+	In git, a conflict happens when two people are modifying the same file, so git doesnt know how to combine the changes from both of you automatically
+
+	When this happens we call it a git conflict
+
+	How to manage git conflicts
+
+		Generally you want to follow these steps,
+
+		1.) git pull 
+
+			this will check if there is a conflict, if there is, instead of pulling it will tell you that there is a conflict
+
+		2.) git add . 
+
+			This will stage the file you are currently working on on your machine
+
+		3.) git commit -m "commit message"
+
+			This will commit your files to your local repository
+
+		4.) git pull
+
+			NOW after you have committed your file changes, you can pull from the online repository, 
+
+			Git will show you the conflicting files
+
+			Example:
+
+				My file:
+
+					black
+					red
+
+				Online Repository file:
+
+					black
+					pink
+
+				Git conflict display after Pull:
+
+					black
+					<<<<<<< HEAD
+					red
+					=======
+					pink
+					>>>>>>> 71f0821ba242a448ad8ee0d782dcaa7590c3606a
+
+		5.) Fix conflicting files manually or via IDE in-build tools.
+
+			Example:
+
+				file after manual fixing:
+
+					black
+					red
+					pink
+
+		6.) commit again
+
+			a.) git add
+
+			b.) git commit -m "conflict corrected"
+
+			c.) git push

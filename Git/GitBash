@@ -1,3 +1,64 @@
 GitBash
 
-	
+	Terminal Commands:
+
+		ls 
+
+			lists directory
+
+		ls -a
+
+			to see all files, even hidden
+
+		pwd
+
+			print word directory
+
+		cd folder name:
+
+			switch to another folder
+
+			cd ..
+
+				go back 
+
+		mkdir folderName 
+
+			make directory
+
+			mkdir git 
+
+				will make a git folder
+
+		git clone URLHere
+
+			this will clone from the web address shown. in most cases it will be to gitHub
+
+
+
+		WARNING!!
+
+			rm fileNameHere
+
+				deletes a file or folder
+
+				rm project name here will delete the project
+
+			rm -f file  
+
+				force removal, do not use if you are NOT SURE 
+
+			rmdir 
+
+				remove folder
+
+			rm -rf folder
+
+				remove forcefully 
+
+	Tricks:
+
+		while typing a folder or file name, pressing tab will auto fill the result
+
+
+

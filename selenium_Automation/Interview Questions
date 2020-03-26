@@ -1,3 +1,10 @@
 Interview Questions
 
+1.) How to handle SSL issues in Selenium
+
+	SSL stands for Secure Sockets Layer
+
+2.) You have 500 test cases but the client asked you to run only 40 of them for the smoke test. how will you do this.
+
 	
+	We use xml runners to create suite of testing and we already xml runner for the smoke test. in my framework, we group test scripts based on modules. so for every module we have a corresponding package with test scripts.

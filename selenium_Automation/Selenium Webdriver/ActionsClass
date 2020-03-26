@@ -1,0 +1,45 @@
+Actions Class:
+
+	Actions class is a utility class that allows you to perform advanced actions like mouse and keyboard events
+
+
+	Using Actions Class:
+
+		To use Actions class you must create an Actions object. This is usually done in the @BeforeMethod but it can be done any time
+
+		an Actions Object MUST have a WebDriver object as a parameter.
+
+
+			Example:
+
+
+	Methods:
+
+		NOTE:
+
+			Actions Class methods are meant to be used in series! most of them will not work on their own, they need others to make them work.
+
+		.perform();
+
+			VERY IMPORTANT! YOUR METHODS WILL NOT WORK WITHOUT .PERFORM(); AT THE END
+
+			The last method to be used in an Actions method string. The other methods listed in the series are used to designate what actions you will be performing and the perform method executes those actions
+
+			Example:
+
+				actionsObject.moveToElement(webElementHere).perform(); 
+
+		.build()
+
+			build method is used when you are calling multiple actions in a row to make sure that all the actions are performed in order
+			build must be one of the last two method in the method string. 
+
+			Example:
+
+				actions.moveToElement(webElementHere).pause(pauseTimeHere).moveToElement(webElement2).build().perform()
+
+		.moveToElement(webElementHere)
+
+
+
+

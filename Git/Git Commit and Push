@@ -208,4 +208,11 @@ GitHub.com:
 
 	Github repository info
 
+
+	Terminal Commands:
+
+		git remote -v 
+
+			command to see remote repository URL
+
 		

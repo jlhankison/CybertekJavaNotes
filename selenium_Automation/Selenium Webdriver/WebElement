@@ -73,3 +73,9 @@ WebElement:
 		If the drop-down menu is not a Select Type:
 
 			In the case of non Select drop-down menus all you need to do is use the driver to click on the drop-down button and then click on the specific option you wish to select (do both using separate locaters for each)
+
+	Actions Class:
+
+		The Actions class is used to make more advanced commands with the Webdriver
+
+		

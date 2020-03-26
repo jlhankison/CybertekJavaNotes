@@ -1,0 +1,15 @@
+JavaScriptExecutor Interface
+
+	What Is JavaScriptExecutor:
+
+		Selenium WebDriver API provides the Ability to execute JavaScript code with the browser window. this is a very useful feature when tests need to interact with the page using javaScript
+
+		Using this API, client-side JavaScript code can also be tested using Selenium Webdriver.
+
+		Selenium WebDriver provides a JavaScriptExecutor interface that can be used to exclude arbitrary JavaScript code within the contest of the browser
+
+	What is It For?
+
+		JavaScriptExecutor is an interface that allows us to execute JavaScript code as part of our selenium script.
+
+		if something doesn't work n Selenium, we can use JavaScriptExecutor to perform webpage actions such as scroll, click, moveMouse, etc.
