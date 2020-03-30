@@ -1,6 +1,6 @@
 git Conflicts
 
-	In git, a conflict happens when two people are modifying the same file, so git doesnt know how to combine the changes from both of you automatically
+	In git, a conflict happens when two people are modifying the same file, so git doesn't know how to combine the changes from both of you automatically
 
 	When this happens we call it a git conflict
 
@@ -41,11 +41,11 @@ git Conflicts
 				Git conflict display after Pull:
 
 					black
-					<<<<<<< HEAD
+					<<<<<<< HEAD  // These are the changes you made in your commit
 					red
 					=======
 					pink
-					>>>>>>> 71f0821ba242a448ad8ee0d782dcaa7590c3606a
+					>>>>>>> 71f0821ba242a448ad8ee0d782dcaa7590c3606a // these are the changes found in the online repository
 
 		5.) Fix conflicting files manually or via IDE in-build tools.
 

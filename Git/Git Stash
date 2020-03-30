@@ -1,0 +1,40 @@
+Git Stash
+
+	Stashing is when you temporarily save your changes in a separate place than the main repository. 
+
+	This is usually for when your current file(s) are not finished so you do not want to merge them with the main repository yet 
+
+
+	Keywords:
+
+		git stash
+
+			this stashes the current version of your local repository for later use
+
+		git stash list
+
+			this lists all the existing stashes every stash has its own unique id
+
+			Example:
+
+				stash@{0}: WIP on master: 81cc18e fixed conflict
+
+		stash ID:
+
+			stash id is the unique id every stash possesses
+
+			Example:
+
+				stash@{0} <-- stash id 
+
+		git stash pop
+
+			This command attempts to merge THE LATEST stash with the current repository. This should create a conflict which can be resolved normally
+
+		git stash pop <stash_id> 
+
+			this does the same as stash pop but with the specified stash id NOT THE LATEST ONE
+
+		git stash clear
+
+			deletes all stashes BE CAREFUL!!!!
