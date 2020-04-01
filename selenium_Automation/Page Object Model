@@ -1,0 +1,19 @@
+Page Object Model
+
+	A page object model is designed to give us an object style model of each webpage and all the locations of the elements within that webpage
+
+	This is an example of a design pattern that is standard in most companies. 
+
+	Creating a Test Page Object Model:
+
+		To implement the page object model in tests, we need to create a page object class for each page that is being tested
+
+		An example would be to create a page object for the login page, which would have a method to log in using the username and password input WebElement and then take you to the home page
+
+		Steps:
+
+			1.) Define and create a package for all the page object models in your automation package
+
+			2.) You will want to create a new Class for every page you will be testing
+
+			Each 

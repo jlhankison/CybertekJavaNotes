@@ -1,0 +1,5 @@
+TakeScreenshot
+
+	the TakeScreenshot interface is designed to work with your RemoteWebDriver in order to take a screenshot of your WebDriver Screen and save it as a .FILE type
+
+	Usually this interface is used to take a screen shot of any errors or failures that occur within your tests as additional evidence for the failure
