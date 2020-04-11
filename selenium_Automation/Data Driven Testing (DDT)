@@ -1,0 +1,69 @@
+Data Driven Testing (DDT)
+
+	DDT is when your test data is separate from your code. Basically, you don't store test data in variables.
+
+
+	Where can DDT data be stored?
+
+		1.) Excel
+		2.) csv files
+		3.) databases
+		4.) feature files when using Cucumber
+
+	How to read external data:
+
+		Excel:
+
+			Use the Java library: Apache POI
+
+		csv file:
+
+			csv is a plain text file where values are separated by a comma. to read it you can use Scanner.
+
+		data base:
+
+			JDBC API
+
+	Why use DDT? 
+
+		It allows us to run the same script with different test data
+
+
+	DDT using TestNG
+
+		TestNG natively supports DDT through Data Provider
+
+			Data Provider:
+
+				allows us to run same test multiple times with different test sets
+
+					Example:
+
+						You have test cases where you need to create cars
+
+	testng xml Runners:
+
+		testing.xml --> xml that is used to create test suits.
+
+		xml runner file names:
+
+			default name is testing.xml
+
+			however, name can be anything, like: smoke.xml,regression.xml, fleet.xml
+
+		You can create as many xml runners as you need
+
+		xml runner file requirements:
+
+			should start with one line that specifies document type:
+
+				Example:
+
+					<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+			Tags:
+
+				xml runner files use tags similar to HTML files do, with opening and closing brackets (<>)
+
+				<suite
+

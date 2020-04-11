@@ -1,1 +1,74 @@
 Git Branches
+
+	git branches are versions of a project that exist in parallel with each other 
+
+	Why create branches:
+
+		1.) Branches allow us to keep the latest STABLE version of our code in one branch, while we update and change the project in another branch.
+
+
+	Rules:
+
+		-by default git creates only one branch (master). This is the only version history of your project. 
+
+		-In most teams, everyone will have their own branch they work in. You don't want everyone to be committing directly to the master branch as the master branch has the latest stable version of the code, and anyone adding their own input can break things. When everyone has their own branch, every person will have to create a pull request, have their code reviewed and approved in order to merge with the master branch which keeps a lid on the chaos
+
+
+	Managing Branches:
+
+		you can manage branches in the console just like any other git command
+
+			Terminal Commands:
+
+				git branch
+
+					This command shows you what branches currently exist in your project and which branch you're currently using based on the * next to the active branch name
+
+					Example:
+
+						C:\Users\jlhan\IdeaProjects\OnlineNewGitPractice2019>git branch
+						  dev
+						* master
+
+				git branch branchNameHere
+
+					this command will create a new branch based on the name you place after branch
+
+				git branch -d branchNameHere
+
+					this will delete the named branch. You cannot delete a branch until you merge it with another branch. 
+
+				git branch -D branchNameHere
+
+					this will FORCE DELETE the named branch. USE CAUTION! The branch that you want to delete must NOT be the active branch.
+
+				git branch -m newBranchName
+
+					this command will rename the current branch to the listed name
+
+				git checkout branchNameHere
+
+					this command will switch your branch. When you switch branches you are changing what version of the project you are seeing/working on. If the you are writing your code in exampleBranch and then switch back to the master branch, you will no longer see the code you wrote (though it will still be there in exampleBranch)
+
+					Notes:
+
+						BEFORE SWITCHING BRANCHES, COMMIT!!!!!
+
+						To switch to the master, you will just type "master" as the branch name
+
+				git checkout -b branchNameHere
+
+					this will simultaneously create a new branch and switch to it, at the same time.
+
+				git push --set-upstream origin branchNameHere
+
+					this command will create a new upstream repository branch (in github for example) that is related to the master branch. Then it pushes the code to this new upstream branch.
+
+				git merge branchNameHere
+
+					this command will merge the NAMED BRANCH with whatever the CURRENT BRANCH is. If your current branch is master, you will merge the NAMED BRANCH with the master branch
+
+				git log --graph --oneline
+
+					this command gives you the whole history of commits in your console in one stream
+
