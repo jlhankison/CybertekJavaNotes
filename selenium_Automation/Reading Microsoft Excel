@@ -1,3 +1,119 @@
 Reading Microsoft Excel
 
-	
+	In Java there is a Library that calls Apache POI that will read/write operations within an excel file
+
+	Apache:
+
+		Apache is just a jar file that we need to add. When using Maven it will just be a dependency
+
+		Notes:
+
+			Apache POI doesn't rely on Microsoft Office Excel, It's a stand alone tool. (you can use Google Sheets to read the file)
+
+		Where to get Apache:
+
+			The Apache POI can gotten from the MvnRepository.com
+			
+			You must import the Apache Dependency into the pom.xml file in your Maven project for you to be able to use the library
+
+
+	Excel Files:
+
+		There are two types of excel files... .xls files are the original spreadsheet files, .xlsx is the newer Excel spreadsheet file
+
+		Parts of an Excel file:
+
+			Workbook:
+
+				This is the excel file itself
+
+			WorkSheet:
+
+				This is the actual spreadsheet 
+
+			Row:
+
+				each row in the excel spreadsheet
+
+			Cell:
+
+				the individual cell (or location) within the spreadsheet
+
+	Setting up Java for Excel:
+
+		1.) You must have a .xls or .xlsx file on hand somewhere for your Maven project to read. Ideally this file will be within your project.
+
+		2.) You must instantiate a File object within your code that has your .xls/.xlsx file path (as a string) as the parameter.
+
+
+			Example:
+
+				File file = new File("Excel_File_Example.xlsx");
+
+			Note: 
+
+				File object can instantiate with ANY file type, it is a Class with many uses and is not exclusive to Apache. We are just using it in this instance to locate the .xls/.xlsx file.
+
+		3.) You must instantiate a Workbook Object via the WorkbookFactory Class using the .create(fileObjectHere) static method and with the file object as the only parameter
+
+			Example:
+
+				Workbook workbook = WorkbookFactory.create(fileObjectHere);
+
+			Note: 
+
+				Workbook and WorkbookFactory Classes are both from Apache and are exclusive to that Library!
+
+		4.) You must instantiate a Sheet object via the workbook object we created earlier. You will use the .getSheet("sheetNameHere") method to get the specific sheet from the workbook, with the title of the worksheet (as a string or as an integer to indicate the index) as the parameter.
+
+			Example:
+
+				Sheet workSheet = workbook.getSheet("sheet_Name_Here");
+
+			Note:
+
+				Sheet Class is exclusive to Apache
+
+		5.) Instantiate a Row object using the workSheet object from earlier. Use the .getRow(rowIndexHere) to get the row for the object
+
+			Example:
+
+				Row firstRow = workSheet.getRow(0);
+
+			Note:
+
+				Row class is exclusive to Apache
+
+		6.) Instantiate a Cell object using the firstRow object from earlier. Use the .getCell(cellIndexHere) to get the cell for the object
+
+			Example:
+
+				Cell firstCell = firstRow.getCell(0);
+
+			Note:
+
+				Cell class is exclusive to Apache
+
+		7.) Create a String object with the value from the cell at the firstCell object we created earlier. Get the value using the .getStringCellValue() method.
+
+			Example:
+
+				String firstCellValue = firstCell.getStringCellValue();
+
+
+	Exception Types:
+
+		NotOLE2FileException: Invalid header signature; 
+
+			This means that no Excel file was found
+
+		java.io.IOException: org.apache.poi.xssf.usermodel.XSSFWorkbookFactory not found - check if poi-ooxml-*.jar is on the classpath.
+
+			library wasn't downloaded. Refresh maven dependencies. 
+
+
+
+
+
+
+

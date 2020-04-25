@@ -1,0 +1,35 @@
+What is Json?
+
+	Json stands for javascript object notation.
+
+	It contains only properties, objects and collections. there are no methods.
+
+	It is a very popular type of document to transmit information between 2 programs - It's used heavily for APIs
+
+	Json is natively supported by Javascript because it is derived from it
+
+	Java as well as other languages have lots of libraries that allow them to work with Json files
+
+	What does Json look like?
+
+		Json files just look like a plain text file
+
+			Example:
+
+				{
+					property: value
+				}
+
+				{
+					user: [
+						name: "John"
+						age: 25
+						jobTitle: "SDET"
+						]
+				}
+
+	Cucumber JSON
+
+		Cucumber is able to generate a JSON report.
+
+			That file can be used

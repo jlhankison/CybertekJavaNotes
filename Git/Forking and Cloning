@@ -1,0 +1,21 @@
+Forking and Cloning
+
+
+	What is the difference between forking and cloning
+
+		Clone:
+
+			clone is when you get a copy of the project from a remote repository (github) to a local repository (on your machine)
+
+			from server --> to your local repository
+
+		Fork:
+
+			Forking is when you are getting a copy of someones repository onto your github account
+
+			from someones github account --> your github account
+
+
+		Both will link with the original repository so you can create pull requests later on
+	
+

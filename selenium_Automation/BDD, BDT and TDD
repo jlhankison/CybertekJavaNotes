@@ -1,0 +1,31 @@
+BDD, BDT and TDD
+
+	BDD:
+
+		Behavior Driven Development
+
+		BDD is development from the User Interface point of view.
+
+	BDT:
+
+		Behavior Driven Testing
+
+	TDD:
+
+		Testing Driven Development
+
+	Similarities:
+
+		They are both about development and automated testing.
+
+		In both cases, tests will be written before development process/code implementation.
+
+	Differences:
+
+		TDD:
+
+			We deal with the raw code.
+
+		BDD/BDT:
+
+			It's about testing the functionality from end-user perspective. So we are not dealing with raw code.

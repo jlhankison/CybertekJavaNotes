@@ -1,0 +1,7 @@
+Parallel testing
+
+	Parallel testing is when you have multiple tests running at the same time (in parallel) 
+
+	to set up your code to run test cases in parallel your driver utility must be capable of handling multiple threads (drivers) at the same time. If the driver is just a singleton it will not be able to run multiple browsers at the same time. 
+
+	In order to fix this problem you can use the ThreadLocal class. ThreadLocal<WebDriver> allows us to create a collection of WebDrivers that are capable of running in parallel

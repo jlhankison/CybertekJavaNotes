@@ -1,0 +1,32 @@
+Smoke Test logic
+
+	How to trigger your Smoke Test?
+
+		CI/CD:
+
+			This stands for - Continues Integration/Continues Delivery and Continues Development.
+
+				Examples of CI/CD:
+
+					Jenkins
+					Bamboo,
+					TravisCI
+					GitLab
+					TimCity
+
+			We will be using Jenkins, as it is the most popular
+
+	Jenkins:
+
+		Jenkins is a CI/CD that can automatically execute your tests based on some triggers.
+
+			Trigger examples:
+
+				Periodically:
+
+					Every morning
+					Every hour
+
+				After deployment:
+
+					A new build was deployed to the test environment, smoke test must be triggered automatically without human intervention.
